@@ -1,0 +1,331 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Tue Oct 21 11:05:33 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+**ERROR: (IMPIMEX-3):	There is no verilog netlist found in init_verilog. The variable is either not specified or specified incorrectly. Check the location of Verilog file in the global file.
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 31)
+
+**ERROR: (IMPSYT-7338):	The specified design session directory '/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/nockg/datapath_nockg.enc.dat' could not be located as specified. Check your file system, correct the location, and try restoring the design again.
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 31)
+
+my_rc
+Loading view definition file from /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/nockg/datapath_pipe_nockg.enc.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.03min, real=0.03min, mem=24.0M, fe_cpu=1.70min, fe_real=4.07min, fe_mem=778.4M) ***
+*** Netlist is unique.
+Loading preference file /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/nockg/datapath_pipe_nockg.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_taskCompressionMode 2 (default=2) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> reset_parasitics
+<CMD> extractRC
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQuantus extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
+Extraction called for design 'datapath_pipe' of instances=13372 and nets=6497 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design datapath_pipe.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_20288_isaserver_isa29_2025_2026_cs3IdT/datapath_pipe_20288_kXksDa.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1107.7M)
+Extracted 10.0025% (CPU Time= 0:00:00.6  MEM= 1191.7M)
+Extracted 20.0031% (CPU Time= 0:00:00.7  MEM= 1192.7M)
+Extracted 30.0037% (CPU Time= 0:00:00.7  MEM= 1193.7M)
+Extracted 40.0023% (CPU Time= 0:00:00.9  MEM= 1194.7M)
+Extracted 50.0029% (CPU Time= 0:00:01.0  MEM= 1195.7M)
+Extracted 60.0035% (CPU Time= 0:00:01.1  MEM= 1196.7M)
+Extracted 70.0021% (CPU Time= 0:00:01.1  MEM= 1198.7M)
+Extracted 80.0027% (CPU Time= 0:00:01.3  MEM= 1198.7M)
+Extracted 90.0033% (CPU Time= 0:00:01.5  MEM= 1198.7M)
+Extracted 100% (CPU Time= 0:00:01.8  MEM= 1199.7M)
+Number of Extracted Resistors     : 85945
+Number of Extracted Ground Cap.   : 92011
+Number of Extracted Coupling Cap. : 227634
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1183.6M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:03.1  Real Time: 0:00:03.0  MEM: 1183.645M)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
+
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -scope /tb_fir_pipe_top/firFilter_pipe_tb -start {} -end {} -block {} ../../vcd/datapath_pipe_nockg_post_route.vcd
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: datapath_pipe
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+             0V	    VSS
+           1.1V	    VDD
+MY_CLK(200.803MHz) Parsing VCD file ../../vcd/datapath_pipe_nockg_post_route.vcd
+
+Starting Reading VCD variables
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT)
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 10%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 20%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 30%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 40%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 50%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 60%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 70%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 80%
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT): 90%
+
+Finished Reading VCD variables
+2025-Oct-21 11:09:50 (2025-Oct-21 09:09:50 GMT)
+   
+The vcd command required:
+   		0.14 user, 0.00 system, and 0.14 real seconds
+
+   Total number of value changes: 247576.
+
+   Total simulation time: 4.98e-07s.
+
+   With this vcd command,  241067 value changes and 4.98e-07 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)                    :
+../../vcd/datapath_pipe_nockg_post_route.vcd
+  Names in file that matched to design   : 6495/6495
+  Annotation coverage for this file
+   (Unique nets matched/Total nets)       : 6495/6495 = 100%
+
+
+  Total annotation coverage for all files of type VCD: 6495/6495 = 100%
+  Percent of VCD annotated nets with zero toggles: 135/6495 = 2.07852%
+
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//datapath_pipe_nockg.rpt
+Using Power View: MyAnView.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: datapath_pipe
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1175.64)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 6503
+AAE_INFO-618: Total number of nets in the design is 6497,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1191.86 CPU=0:00:06.5 REAL=0:00:07.0)
+End delay calculation (fullDC). (MEM=1164.78 CPU=0:00:07.4 REAL=0:00:08.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1164.8M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1164.8M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1092.89)
+Glitch Analysis: View MyAnView -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View MyAnView -- Total Number of Nets Analyzed = 6503. 
+Total number of fetched objects 6503
+AAE_INFO-618: Total number of nets in the design is 6497,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1135.05 CPU=0:00:00.1 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1135.05 CPU=0:00:00.2 REAL=0:00:01.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=933.15MB/2267.27MB/980.65MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=933.66MB/2267.27MB/980.65MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=933.98MB/2267.27MB/980.65MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT)
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 10%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 20%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 30%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 40%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 50%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 60%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 70%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 80%
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 90%
+
+Finished Levelizing
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT)
+
+Starting Activity Propagation
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT)
+
+Finished Activity Propagation
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT)
+
+Activity annotation summary:
+        Primary Inputs : 153/153 = 100%
+          Flop outputs : 846/846 = 100%
+  Memory/Macro outputs : 0/0 = 0%
+      Tristate outputs : 0/0 = 0%
+            Total Nets : 6495/6495 = 100%
+
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=934.30MB/2267.27MB/980.65MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT)
+ ... Calculating switching power
+2025-Oct-21 11:10:00 (2025-Oct-21 09:10:00 GMT): 10%
+2025-Oct-21 11:10:01 (2025-Oct-21 09:10:01 GMT): 20%
+2025-Oct-21 11:10:01 (2025-Oct-21 09:10:01 GMT): 30%
+2025-Oct-21 11:10:01 (2025-Oct-21 09:10:01 GMT): 40%
+2025-Oct-21 11:10:01 (2025-Oct-21 09:10:01 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Oct-21 11:10:01 (2025-Oct-21 09:10:01 GMT): 60%
+2025-Oct-21 11:10:01 (2025-Oct-21 09:10:01 GMT): 70%
+2025-Oct-21 11:10:02 (2025-Oct-21 09:10:02 GMT): 80%
+2025-Oct-21 11:10:02 (2025-Oct-21 09:10:02 GMT): 90%
+
+Finished Calculating power
+2025-Oct-21 11:10:02 (2025-Oct-21 09:10:02 GMT)
+Ended Power Computation: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=934.76MB/2267.27MB/980.65MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=934.76MB/2267.27MB/980.65MB)
+
+Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=934.83MB/2267.27MB/980.65MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=934.84MB/2267.27MB/980.65MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.97633465 	   54.8217%
+Total Switching Power:       1.41319630 	   39.2008%
+Total Leakage Power:         0.21548847 	    5.9775%
+Total Power:                 3.60501942
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=937.89MB/2267.27MB/980.65MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:02, real=0:00:02,
+mem(process/total/peak)=1454.68MB/3035.69MB/1454.69MB)
+
+Output file is .//datapath_pipe_nockg.rpt.
+<CMD> report_power -outfile power_report_innovus -sort { total }
+Using Power View: MyAnView.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1454.74MB/3035.69MB/1454.74MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.97633465 	   54.8217%
+Total Switching Power:       1.41319630 	   39.2008%
+Total Leakage Power:         0.21548847 	    5.9775%
+Total Power:                 3.60501942
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1454.93MB/3035.69MB/1454.93MB)
+
+
+Output file is .//power_report_innovus.

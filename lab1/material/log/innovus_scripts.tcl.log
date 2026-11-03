@@ -1,0 +1,71 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	-abort_on_error -no_gui -files scripts.tcl 
+Date:		Tue Oct 21 09:48:09 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_22205_isaserver_isa29_2025_2026_tP4LLO.
+
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+Sourcing file "scripts.tcl" ...
+Cannot display window in tcl mode
+#% Begin Load MMMC data ... (date=10/21 09:48:46, mem=549.1M)
+**ERROR: (TCLCMD-989):	cannot open SDC file '../../netlist/datapath.sdc' for mode 'SDC_layout'
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'scripts.tcl' was returned and script processing was stopped. Review the following error in 'scripts.tcl' then restart.
+Error info: scripts.tcl: 
+    while executing
+"create_constraint_mode -name SDC_layout -sdc_file $in_sdc_filename"
+    (file "/tmp/innovus_temp_22205_isaserver_isa29_2025_2026_tP4LLO/.view_def_init_design_22205.tclUsPXN8" line 15)
+    invoked from within
+"::se_source_orig /tmp/innovus_temp_22205_isaserver_isa29_2025_2026_tP4LLO/.view_def_init_design_22205.tclUsPXN8"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 176)
+    invoked from within
+"source /tmp/innovus_temp_22205_isaserver_isa29_2025_2026_tP4LLO/.view_def_init_design_22205.tclUsPXN8"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list source $view_def_to_be_processed]"
+    (procedure "::init_design::process_view_def" line 81)
+    invoked from within
+"::init_design::process_view_def $::init_mmmc_file"
+    (procedure "init_design" line 193)
+    invoked from within
+"init_design"
+    (file "scripts.tcl" line 14)
+    invoked from within
+"::se_source_orig scripts.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 176)
+    invoked from within
+"source scripts.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source scripts.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source scripts.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+
+*** Me
+*** INTERRUPTED *** [signal 1]
+3.375M, initial mem = 272.285M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:33.2, real=0:00:38.0, mem=653.4M) ---
+

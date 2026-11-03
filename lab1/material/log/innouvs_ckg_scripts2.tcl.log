@@ -1,0 +1,23 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	-no_logv -no_cmd -files scripts2.tcl 
+Date:		Sat Nov  1 16:51:52 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_29042_isaserver_isa29_2025_2026_xMJYbq.
+
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+Sourcing file "scripts2.tcl" ...
+Suppress "**WARN ..." messages.
+Loading view definition file from /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/innovus/ckg/datapath_ckg.enc.dat/viewDefinition.tcl
+

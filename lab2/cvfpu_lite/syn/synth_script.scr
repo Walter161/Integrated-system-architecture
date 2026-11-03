@@ -1,0 +1,78 @@
+# Variable
+set TOP_ENTITY "fpnew_top"
+set CLK_NAME "CLK"
+set CLK_PIN "clk_i"
+set CLK_PERIOD [getenv "CLK_PERIOD"]
+set INPUT_DELAY "0.5"
+set OUTPUT_DELAY "0.5"
+set JITTER "0.07"
+
+# Remove work directory each run
+file delete -force -- work
+
+# Create now directory work
+file mkdir work
+
+# Analyze the source files (SVERILOG and VHDL)
+analyze -f sverilog -lib work ../src/cf_math_pkg.sv
+analyze -f sverilog -lib work ../src/lzc.sv
+analyze -f sverilog -lib work ../src/rr_arb_tree.sv
+analyze -f sverilog -lib work ../src/fpnew_pkg.sv
+analyze -f sverilog -lib work ../src/fpnew_classifier.sv
+analyze -f sverilog -lib work ../src/fpnew_rounding.sv
+analyze -f sverilog -lib work ../src/fpnew_fma.sv
+analyze -f sverilog -lib work ../src/fpnew_opgroup_fmt_slice.sv
+analyze -f sverilog -lib work ../src/fpnew_opgroup_block.sv
+analyze -f sverilog -lib work ../src/fpnew_top.sv
+
+# analyze -f vhdl -lib work ../tb/clk_gen.vhd
+# analyze -f vhdl -lib work ../tb/data_gen16_v2.vhd
+
+# Elaborate design
+elaborate $TOP_ENTITY -lib work
+
+# to get rid of multiple instances (should not be our case)
+uniquify
+
+# Link step 
+link
+
+# Create clock and protect it
+create_clock -name $CLK_NAME -period $CLK_PERIOD $CLK_PIN
+set_dont_touch_network $CLK_NAME
+
+# setting clock jitter
+set_clock_uncertainty $JITTER [get_clock $CLK_NAME]
+
+# set delays of in/out
+set_input_delay $INPUT_DELAY -max -clock $CLK_NAME [remove_from_collection [all_inputs] $CLK_PIN]
+set_output_delay $OUTPUT_DELAY -max -clock $CLK_NAME [all_outputs]
+
+# set load of each output
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+# Compile
+compile
+
+# Save data
+report_timing > report/timing_${CLK_PERIOD}ns.txt
+report_area > report/area_${CLK_PERIOD}ns.txt
+
+# generate netlist
+ungroup -all -flatten	
+
+# export netlist in verilog
+change_names -hierarchy -rules verilog
+
+# save delay of netlist
+write_sdf ../netlist/${TOP_ENTITY}.sdf 
+
+# save netlist in verilog
+write -f verilog -output ../netlist/${TOP_ENTITY}.v
+
+# save constraints of in/out in std format
+#write_sdc ../netlist/${TOP_ENTITY}.sdc
+
+# close design compiler
+quit

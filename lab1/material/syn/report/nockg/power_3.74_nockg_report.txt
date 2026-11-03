@@ -1,0 +1,55 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : datapath
+Version: S-2021.06-SP4
+Date   : Sat Nov  1 00:24:33 2025
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+datapath               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   2.9238 mW   (57%)
+  Net Switching Power  =   2.1872 mW   (43%)
+                         ---------
+Total Dynamic Power    =   5.1110 mW  (100%)
+
+Cell Leakage Power     = 223.4742 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         541.9808          157.4885        2.5707e+04          725.1771  (  13.59%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.3818e+03        2.0297e+03        1.9777e+05        4.6093e+03  (  86.41%)
+--------------------------------------------------------------------------------------------------
+Total          2.9238e+03 uW     2.1872e+03 uW     2.2347e+05 nW     5.3345e+03 uW
+1

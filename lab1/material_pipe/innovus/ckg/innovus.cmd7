@@ -1,0 +1,225 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Oct 21 21:08:57 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+#@(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+#@(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+#@(#)CDS: CPE v20.11-s013
+#@(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+reset_parasitics
+extractRC
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+read_activity_file -format VCD -scope /tb_fir_pipe_top/firFilter_pipe_tb -start {} -end {} -block {} ../../vcd/datapath_pipe_ckg_post_route.vcd
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//datapath_pipe_ckg.rpt
+report_power -outfile power_report_pipe_innovus -sort { total }
+zoomBox 192.95600 110.17500 222.10600 131.22800
+gui_select -rect {210.68600 123.63950 214.97850 125.17250}
+zoomBox 182.97200 107.31650 232.59850 132.08450
+zoomBox 178.89300 103.95350 237.27700 133.09250
+setDrawView place
+zoomBox 161.94250 94.85350 242.75050 135.18400
+zoomBox 165.51550 131.26850 165.51550 131.41500
+zoomBox 164.92150 130.82450 166.90300 131.70100
+uiSetTool move
+zoomBox 164.27600 130.15600 168.74250 132.13150
+setDrawView ameba
+setDrawView ameba
+setDrawView fplan
+setDrawView fplan
+fit
+setDrawView place
+zoomBox 10.98450 16.50550 198.99250 99.66100
+zoomBox 52.34300 22.98950 135.76450 59.88650
+zoomBox 45.50800 21.34600 143.65050 64.75400
+zoomBox -29.38150 2.40150 191.80750 100.23300
+zoomBox -122.89850 -18.13500 237.27200 141.16750
+setLayerPreference allLayers -isSelectable 0
+setLayerPreference allLayers -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference clock -isSelectable 1
+setLayerPreference allLayers -isSelectable 1
+setLayerPreference allLayers -isSelectable 0
+setLayerPreference allLayers -isVisible 1
+setLayerPreference allLayers -isVisible 0
+setLayerPreference pgPower -isVisible 1
+setLayerPreference pgPower -isSelectable 1
+setLayerPreference pgPower -isSelectable 0
+setLayerPreference pgPower -isVisible 0
+setLayerPreference block -isVisible 1
+setLayerPreference stdCell -isVisible 1
+setLayerPreference coverCell -isVisible 1
+setLayerPreference phyCell -isVisible 1
+setLayerPreference allLayers -isVisible 1
+setLayerPreference node_misc -isVisible 1
+setLayerPreference node_bump -isVisible 0
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_route -isVisible 0
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgPower -isVisible 0
+setLayerPreference power -isVisible 0
+setLayerPreference net -isVisible 0
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_partition -isVisible 0
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_floorplan -isVisible 0
+setLayerPreference node_row -isVisible 1
+setLayerPreference node_row -isVisible 0
+setLayerPreference node_misc -isVisible 0
+setLayerPreference node_misc -isVisible 1
+setLayerPreference node_power -isVisible 0
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+setLayerPreference node_cell -isVisible 1
+setLayerPreference node_cell -isVisible 0
+setLayerPreference node_blockage -isVisible 1
+setLayerPreference node_blockage -isVisible 0
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+setLayerPreference node_power -isVisible 0
+setLayerPreference node_power -isVisible 1
+setLayerPreference instanceCell -isVisible 0
+setLayerPreference instanceCell -isVisible 1
+setLayerPreference instanceCell -isVisible 0
+setLayerPreference instanceCell -isVisible 1
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+setLayerPreference instanceStatus -isVisible 0
+setLayerPreference instanceStatus -isVisible 1
+zoomBox 1.16600 19.20200 142.79150 89.88600
+zoomBox 67.51850 39.27450 112.92150 61.93450
+zoomBox 88.28650 46.85100 105.41100 55.39750
+zoomBox 82.70750 44.22650 110.59200 58.14350
+zoomBox 69.46850 38.00950 122.88700 64.67000
+zoomBox 51.62500 31.73250 138.60800 75.14500
+zoomBox 33.53750 25.73500 153.92950 85.82150
+zoomBox 8.72200 17.10800 175.35600 100.27350
+zoomBox -33.53250 -2.43000 197.10350 112.67850
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference clock -isSelectable 1
+setLayerPreference allLayers -isVisible 0
+setLayerPreference allLayers -isVisible 1
+setLayerPreference allLayers -isSelectable 1
+zoomBox -119.07800 -36.97450 200.14150 122.34500
+setLayerPreference allLayers -isSelectable 0
+setLayerPreference allLayers -isSelectable 1
+setLayerPreference node_track -isVisible 1
+zoomBox -139.03850 -56.59400 236.51400 130.84100
+zoomBox 169.63800 51.22650 168.50050 18.69850
+zoomBox 190.99800 39.26550 190.91900 37.48900
+fit
+setLayerPreference violation -isVisible 0
+setLayerPreference violation -isVisible 1
+setLayerPreference violation -isVisible 0
+setLayerPreference block -isVisible 0
+setLayerPreference stdCell -isVisible 0
+setLayerPreference coverCell -isVisible 0
+setLayerPreference stdCell -isVisible 1
+setLayerPreference stdCell -isVisible 0
+setLayerPreference block -isVisible 1
+setLayerPreference pgPower -isVisible 1
+setLayerPreference node_power -isVisible 0
+setLayerPreference node_module -isVisible 0
+setLayerPreference shield -isVisible 1
+setLayerPreference unknowState -isVisible 1
+setLayerPreference unknowState -isVisible 0
+setLayerPreference metalFill -isVisible 1
+setLayerPreference node_net -isSelectable 0
+setLayerPreference node_net -isVisible 1
+setLayerPreference pgViaGridObj -isVisible 1
+setLayerPreference pgViaGridObj -isVisible 0
+setDrawView fplan
+setLayerPreference allLayers -isVisible 0
+setLayerPreference allLayers -isVisible 1
+setLayerPreference allLayers -isSelectable 0
+setLayerPreference allLayers -isVisible 0
+setLayerPreference allLayers -isVisible 1
+setLayerPreference allLayers -isSelectable 1
+ctd_win -side none -id ctd_window
+selectInst REG_B4_Q_reg_3_
+selectInst REG_B4_Q_reg_4_
+selectInst REG_B4_Q_reg_9_
+selectInst REG_B4_Q_reg_5_
+selectInst REG_B4_Q_reg_7_
+selectInst REG_B4_Q_reg_8_
+selectInst REG_B4_Q_reg_6_
+selectInst REG_B4_Q_reg_2_
+zoomSelected
+deselectInst REG_B4_Q_reg_2_
+deselectInst REG_B4_Q_reg_6_
+deselectInst REG_B4_Q_reg_8_
+deselectInst REG_B4_Q_reg_7_
+deselectInst REG_B4_Q_reg_5_
+deselectInst REG_B4_Q_reg_9_
+deselectInst REG_B4_Q_reg_4_
+deselectInst REG_B4_Q_reg_3_
+selectObject Net REG8_net80
+zoomSelected
+deselectObject Net REG8_net80
+selectInst FF_in_Q_reg
+zoomSelected
+setDrawView ameba
+redraw
+fit
+setLayerPreference clock -isVisible 0
+setLayerPreference violation -isVisible 1
+setLayerPreference violation -isSelectable 0
+setLayerPreference violation -isSelectable 1
+setLayerPreference violation -isSelectable 0
+setLayerPreference violation -isVisible 0
+setLayerPreference node_inst -isVisible 1
+setLayerPreference node_module -isVisible 1
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_track -isVisible 0
+setLayerPreference node_route -isVisible 1
+setLayerPreference node_route -isVisible 0
+setLayerPreference node_route -isVisible 1
+setLayerPreference instanceCell -isVisible 0
+setLayerPreference instanceCell -isVisible 1
+setLayerPreference instanceCell -isSelectable 0
+setLayerPreference instanceCell -isSelectable 1
+setLayerPreference instanceCell -isSelectable 0
+setLayerPreference instanceCell -isSelectable 1
+setLayerPreference instanceCell -isSelectable 0
+setLayerPreference instanceCell -isSelectable 1
+setLayerPreference instanceCell -isVisible 0
+setLayerPreference node_net -isVisible 1
+setLayerPreference power -isVisible 0
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgGround -isVisible 0
+setLayerPreference net -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isSelectable 0
+setLayerPreference node_bump -isVisible 1
+setDrawView fplan
+setDrawView place
+setLayerPreference node_route -isVisible 0
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference node_bump -isSelectable 0
+setLayerPreference node_bump -isVisible 0
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1

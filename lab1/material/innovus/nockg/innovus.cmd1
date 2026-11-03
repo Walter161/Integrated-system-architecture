@@ -1,0 +1,65 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Oct 22 08:49:23 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+#@(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+#@(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+#@(#)CDS: CPE v20.11-s013
+#@(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+reset_parasitics
+extractRC
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+read_activity_file -format VCD -scope /tb_fir_top/firFilter_tb -start {} -end {} -block {} ../../vcd/datapath_nockg_post_route.vcd
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//datapath_nockg.rpt
+report_power -outfile power_report_innovus -sort { total }
+setDrawView ameba
+setDrawView fplan
+setDrawView place
+setDrawView fplan
+setDrawView place
+zoomBox -8.03300 46.66150 366.79950 228.36300
+zoomBox -8.03300 83.00150 366.79950 264.70300
+zoomBox -20.60050 66.81400 420.37900 280.58050
+zoomBox -8.03300 83.00150 366.79950 264.70300
+zoomBox -35.38650 47.76950 483.41400 299.26000
+zoomBox -73.24500 -0.99450 644.81800 347.08900
+zoomBox -198.16950 -161.90500 1177.41450 504.91450
+zoomBox -163.32300 -135.12450 1005.92350 431.67200
+fit
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+zoomBox -25.10100 33.36350 172.34050 129.07400
+zoomBox 31.66250 69.17350 119.26950 111.64150
+zoomBox 49.13300 80.19500 102.93550 106.27600
+zoomBox 59.86150 86.96300 92.90400 102.98050
+zoomBox 56.62000 85.27150 95.49350 104.11550
+zoomBox 20.93200 66.64950 124.00300 116.61350
+zoomBox -50.90450 29.16500 181.39100 141.77100
+zoomBox -212.80750 -55.31650 310.73100 198.47050
+zoomBox -324.59000 -113.64500 400.03150 237.61800
+setLayerPreference node_layer -isVisible 1
+zoomBox -212.96500 -60.03350 310.57400 193.75400
+zoomBox -169.37100 -39.09600 275.63750 176.62350
+zoomBox -132.31600 -21.29900 245.94150 162.06250
+zoomBox -100.81900 -6.17200 220.69950 149.68550

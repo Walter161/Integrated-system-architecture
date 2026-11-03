@@ -1,0 +1,5 @@
+VCD to SAIF translator version S-2021.06-SP4 Synopsys, Inc.
+direct mapping all VCD instances
+processing header of VCD file: vcd/datapath_syn_ckg.vcd
+processing value changes of VCD file: vcd/datapath_syn_ckg.vcd
+generating backward SAIF file: saif/datapath_syn_ckg.saif

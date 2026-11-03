@@ -1,0 +1,20 @@
+#!/bin/bash
+# used to clean folder
+
+shopt -s extglob
+
+#whitelist
+rm -rf !(".gitignore"|"report"|".synopsys_dc.setup"|"synth_ultra_script.scr"|"synth_ultra_script_gui.scr"|"cleaner.sh")
+
+#recursive cleaner
+ls -d */ 2>/dev/null | while read -r dir 
+do
+
+cd $dir
+if [ -f "cleaner.sh" ]; then
+	./cleaner.sh   
+fi
+cd ..
+
+done
+

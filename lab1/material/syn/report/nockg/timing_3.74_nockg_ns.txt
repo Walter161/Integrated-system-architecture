@@ -1,0 +1,144 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : datapath
+Version: S-2021.06-SP4
+Date   : Sat Nov  1 00:23:50 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG1/Q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_OUT/Q_reg[14]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  datapath           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG1/Q_reg[3]/CK (DFFR_X1)                              0.00       0.00 r
+  REG1/Q_reg[3]/Q (DFFR_X1)                               0.12       0.12 r
+  REG1/Q[3] (reg_N15_8)                                   0.00       0.12 r
+  MUL1/A[3] (mult_x15_7)                                  0.00       0.12 r
+  MUL1/mult_24/a[3] (mult_x15_7_DW_mult_tc_0_DW_mult_tc_7)
+                                                          0.00       0.12 r
+  MUL1/mult_24/U579/Z (CLKBUF_X3)                         0.07       0.19 r
+  MUL1/mult_24/U677/ZN (XNOR2_X1)                         0.07       0.26 r
+  MUL1/mult_24/U679/ZN (NAND2_X1)                         0.03       0.29 f
+  MUL1/mult_24/U674/Z (BUF_X1)                            0.04       0.33 f
+  MUL1/mult_24/U772/ZN (OAI22_X1)                         0.05       0.39 r
+  MUL1/mult_24/U160/S (HA_X1)                             0.08       0.47 r
+  MUL1/mult_24/U536/ZN (XNOR2_X1)                         0.07       0.54 r
+  MUL1/mult_24/U645/ZN (NAND2_X1)                         0.03       0.57 f
+  MUL1/mult_24/U540/ZN (AND3_X1)                          0.04       0.61 f
+  MUL1/mult_24/U640/ZN (OR2_X1)                           0.06       0.67 f
+  MUL1/mult_24/U642/ZN (NAND3_X1)                         0.03       0.70 r
+  MUL1/mult_24/U636/ZN (NAND2_X1)                         0.02       0.73 f
+  MUL1/mult_24/U638/ZN (AND3_X1)                          0.04       0.77 f
+  MUL1/mult_24/U632/ZN (OR2_X1)                           0.06       0.82 f
+  MUL1/mult_24/U603/ZN (NAND3_X1)                         0.03       0.86 r
+  MUL1/mult_24/U610/ZN (NAND2_X1)                         0.03       0.89 f
+  MUL1/mult_24/U503/ZN (AND3_X2)                          0.05       0.93 f
+  MUL1/mult_24/U609/ZN (OAI222_X1)                        0.05       0.99 r
+  MUL1/mult_24/U615/ZN (NAND2_X1)                         0.03       1.02 f
+  MUL1/mult_24/U538/ZN (AND3_X2)                          0.05       1.06 f
+  MUL1/mult_24/U619/ZN (OAI222_X1)                        0.06       1.13 r
+  MUL1/mult_24/U626/ZN (NAND2_X1)                         0.04       1.17 f
+  MUL1/mult_24/U600/ZN (NAND3_X1)                         0.04       1.21 r
+  MUL1/mult_24/U521/ZN (XNOR2_X1)                         0.04       1.24 f
+  MUL1/mult_24/product[14] (mult_x15_7_DW_mult_tc_0_DW_mult_tc_7)
+                                                          0.00       1.24 f
+  MUL1/M[0] (mult_x15_7)                                  0.00       1.24 f
+  ADD1/B[0] (add_x15_7)                                   0.00       1.24 f
+  ADD1/add_24/B[0] (add_x15_7_DW01_add_0_DW01_add_7)      0.00       1.24 f
+  ADD1/add_24/U1_0/CO (FA_X1)                             0.10       1.35 f
+  ADD1/add_24/U1_1/CO (FA_X1)                             0.09       1.44 f
+  ADD1/add_24/U1_2/S (FA_X1)                              0.14       1.57 r
+  ADD1/add_24/SUM[2] (add_x15_7_DW01_add_0_DW01_add_7)
+                                                          0.00       1.57 r
+  ADD1/S[2] (add_x15_7)                                   0.00       1.57 r
+  ADD2/A[2] (add_x15_6)                                   0.00       1.57 r
+  ADD2/add_24/A[2] (add_x15_6_DW01_add_0_DW01_add_6)      0.00       1.57 r
+  ADD2/add_24/U1_2/S (FA_X1)                              0.12       1.69 f
+  ADD2/add_24/SUM[2] (add_x15_6_DW01_add_0_DW01_add_6)
+                                                          0.00       1.69 f
+  ADD2/S[2] (add_x15_6)                                   0.00       1.69 f
+  ADD3/A[2] (add_x15_5)                                   0.00       1.69 f
+  ADD3/add_24/A[2] (add_x15_5_DW01_add_0_DW01_add_5)      0.00       1.69 f
+  ADD3/add_24/U1_2/CO (FA_X1)                             0.10       1.79 f
+  ADD3/add_24/U1_3/S (FA_X1)                              0.14       1.93 r
+  ADD3/add_24/SUM[3] (add_x15_5_DW01_add_0_DW01_add_5)
+                                                          0.00       1.93 r
+  ADD3/S[3] (add_x15_5)                                   0.00       1.93 r
+  ADD4/A[3] (add_x15_4)                                   0.00       1.93 r
+  ADD4/add_24/A[3] (add_x15_4_DW01_add_0_DW01_add_4)      0.00       1.93 r
+  ADD4/add_24/U1_3/S (FA_X1)                              0.12       2.05 f
+  ADD4/add_24/SUM[3] (add_x15_4_DW01_add_0_DW01_add_4)
+                                                          0.00       2.05 f
+  ADD4/S[3] (add_x15_4)                                   0.00       2.05 f
+  ADD5/A[3] (add_x15_3)                                   0.00       2.05 f
+  ADD5/add_24/A[3] (add_x15_3_DW01_add_0_DW01_add_3)      0.00       2.05 f
+  ADD5/add_24/U1_3/CO (FA_X1)                             0.10       2.15 f
+  ADD5/add_24/U1_4/CO (FA_X1)                             0.09       2.24 f
+  ADD5/add_24/U1_5/CO (FA_X1)                             0.09       2.33 f
+  ADD5/add_24/U1_6/CO (FA_X1)                             0.09       2.42 f
+  ADD5/add_24/U1_7/S (FA_X1)                              0.14       2.56 r
+  ADD5/add_24/SUM[7] (add_x15_3_DW01_add_0_DW01_add_3)
+                                                          0.00       2.56 r
+  ADD5/S[7] (add_x15_3)                                   0.00       2.56 r
+  ADD6/A[7] (add_x15_2)                                   0.00       2.56 r
+  ADD6/add_24/A[7] (add_x15_2_DW01_add_0_DW01_add_2)      0.00       2.56 r
+  ADD6/add_24/U1_7/S (FA_X1)                              0.12       2.68 f
+  ADD6/add_24/SUM[7] (add_x15_2_DW01_add_0_DW01_add_2)
+                                                          0.00       2.68 f
+  ADD6/S[7] (add_x15_2)                                   0.00       2.68 f
+  ADD7/A[7] (add_x15_1)                                   0.00       2.68 f
+  ADD7/add_24/A[7] (add_x15_1_DW01_add_0_DW01_add_1)      0.00       2.68 f
+  ADD7/add_24/U1_7/CO (FA_X1)                             0.10       2.78 f
+  ADD7/add_24/U1_8/CO (FA_X1)                             0.09       2.87 f
+  ADD7/add_24/U1_9/CO (FA_X1)                             0.09       2.96 f
+  ADD7/add_24/U1_10/CO (FA_X1)                            0.09       3.05 f
+  ADD7/add_24/U1_11/CO (FA_X1)                            0.09       3.14 f
+  ADD7/add_24/U1_12/CO (FA_X1)                            0.09       3.23 f
+  ADD7/add_24/U1_13/CO (FA_X1)                            0.09       3.32 f
+  ADD7/add_24/U1_14/S (FA_X1)                             0.13       3.46 r
+  ADD7/add_24/SUM[14] (add_x15_1_DW01_add_0_DW01_add_1)
+                                                          0.00       3.46 r
+  ADD7/S[14] (add_x15_1)                                  0.00       3.46 r
+  ADD8/A[14] (add_x15_0)                                  0.00       3.46 r
+  ADD8/add_24/A[14] (add_x15_0_DW01_add_0)                0.00       3.46 r
+  ADD8/add_24/U1_14/S (FA_X1)                             0.11       3.57 f
+  ADD8/add_24/SUM[14] (add_x15_0_DW01_add_0)              0.00       3.57 f
+  ADD8/S[14] (add_x15_0)                                  0.00       3.57 f
+  REG_OUT/D[14] (reg_N15_0)                               0.00       3.57 f
+  REG_OUT/U35/ZN (NAND2_X1)                               0.03       3.60 r
+  REG_OUT/U3/ZN (NAND2_X1)                                0.02       3.62 f
+  REG_OUT/Q_reg[14]/D (DFFR_X1)                           0.01       3.63 f
+  data arrival time                                                  3.63
+
+  clock MY_CLK (rise edge)                                3.74       3.74
+  clock network delay (ideal)                             0.00       3.74
+  clock uncertainty                                      -0.07       3.67
+  REG_OUT/Q_reg[14]/CK (DFFR_X1)                          0.00       3.67 r
+  library setup time                                     -0.04       3.63
+  data required time                                                 3.63
+  --------------------------------------------------------------------------
+  data required time                                                 3.63
+  data arrival time                                                 -3.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

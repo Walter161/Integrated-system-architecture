@@ -1,0 +1,75 @@
+[10/28 12:16:17      0s] 
+[10/28 12:16:17      0s] Cadence Innovus(TM) Implementation System.
+[10/28 12:16:17      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/28 12:16:17      0s] 
+[10/28 12:16:17      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[10/28 12:16:17      0s] Options:	
+[10/28 12:16:17      0s] Date:		Tue Oct 28 12:16:17 2025
+[10/28 12:16:17      0s] Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[10/28 12:16:17      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[10/28 12:16:17      0s] 
+[10/28 12:16:17      0s] License:
+[10/28 12:16:17      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[10/28 12:16:17      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/28 12:17:54     38s] @(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/28 12:17:54     38s] @(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+[10/28 12:17:54     38s] @(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/28 12:17:54     38s] @(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+[10/28 12:17:54     38s] @(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+[10/28 12:17:54     38s] @(#)CDS: CPE v20.11-s013
+[10/28 12:17:54     38s] @(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/28 12:17:54     38s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[10/28 12:17:54     38s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[10/28 12:17:54     38s] @(#)CDS: RCDB 11.15.0
+[10/28 12:17:54     38s] @(#)CDS: STYLUS 20.10-p011_1 (06/03/2020 04:47 PDT)
+[10/28 12:17:54     38s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_8419_isaserver_isa29_2025_2026_xzI9m5.
+
+[10/28 12:17:54     38s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[10/28 12:18:02     40s] 
+[10/28 12:18:02     40s] **INFO:  MMMC transition support version v31-84 
+[10/28 12:18:02     40s] 
+[10/28 12:18:02     40s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/28 12:18:02     40s] <CMD> suppressMessage ENCEXT-2799
+[10/28 12:18:02     41s] <CMD> win
+[10/28 12:20:59     43s] **ERROR: (IMPSYT-6000):	No Object Selected.
+[10/28 12:21:35     48s] <CMD> encMessage warning 0
+[10/28 12:21:35     48s] Suppress "**WARN ..." messages.
+[10/28 12:21:35     48s] <CMD> encMessage debug 0
+[10/28 12:21:35     48s] <CMD> encMessage info 0
+[10/28 12:21:37     50s] Loading view definition file from /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/ckg/datapath_pipe_ckg.enc.dat/viewDefinition.tcl
+[10/28 12:21:39     52s] *** End library_loading (cpu=0.04min, real=0.03min, mem=19.0M, fe_cpu=0.88min, fe_real=5.37min, fe_mem=798.7M) ***
+[10/28 12:21:40     53s] *** Netlist is unique.
+[10/28 12:21:41     53s] Loading preference file /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/ckg/datapath_pipe_ckg.enc.dat/gui.pref.tcl ...
+[10/28 12:21:41     53s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[10/28 12:21:44     55s] Loading place ...
+[10/28 12:21:47     57s] {RT my_rc 0 10 10 {4 1} {7 0} {9 0} 3}
+[10/28 12:21:48     58s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[10/28 12:21:48     58s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_taskCompressionMode 2 (default=2) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[10/28 12:21:48     58s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+[10/28 12:21:48     58s] timing_enable_default_delay_arc
+[10/28 12:21:54     58s] <CMD> encMessage warning 0
+[10/28 12:21:54     58s] Suppress "**WARN ..." messages.
+[10/28 12:21:54     58s] <CMD> encMessage debug 0
+[10/28 12:21:54     58s] <CMD> encMessage info 0
+[10/28 12:21:54     58s] 
+[10/28 12:21:54     58s] 
+[10/28 12:21:54     58s] ERROR: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 12:21:54     58s] 
+[10/28 12:21:54     58s] 
+[10/28 12:21:54     58s] **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 12:21:54     58s] 
+[10/28 12:21:54     58s]     while executing
+[10/28 12:21:54     58s] "error $catchMsg"
+[10/28 12:21:54     58s]     (procedure "restoreDesign" line 31)
+[10/28 12:21:54     58s] 
+[10/28 12:21:54     58s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 12:21:54     58s] 
+[10/28 12:22:04     60s] <CMD> setDrawView ameba
+[10/28 12:22:08     60s] <CMD> setDrawView fplan
+[10/28 12:22:12     60s] <CMD> setDrawView ameba
+[10/28 12:22:15     61s] <CMD> setDrawView place
+[10/28 12:22:19     61s] <CMD> setDrawView ameba
+[10/28 12:22:23     61s] <CMD> setDrawView place
+[10/28 12:23:47     77s] <CMD> dumpToGIF layout_delPorcoDidDDio
+[10/28 14:36:26   2386s] 
+[10/28 14:36:26   2386s] *** Memory Usage v#2 (Current mem = 1182.180M, initial mem = 272.285M) ***

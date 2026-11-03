@@ -1,0 +1,1 @@
+/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/netlist/datapath_ckg.sdc

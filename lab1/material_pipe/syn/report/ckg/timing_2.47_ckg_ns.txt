@@ -1,0 +1,109 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : datapath_pipe
+Version: S-2021.06-SP4
+Date   : Fri Nov  7 16:45:56 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG3/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG04_pipe/Q_reg[14]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  datapath_pipe      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG3/Q_reg[1]/CK (DFFR_X1)                              0.00       0.00 r
+  REG3/Q_reg[1]/Q (DFFR_X1)                               0.11       0.11 r
+  REG3/Q[1] (reg_N15_11)                                  0.00       0.11 r
+  MUL3/A[1] (mult_x15_5)                                  0.00       0.11 r
+  MUL3/mult_24/a[1] (mult_x15_5_DW_mult_tc_0_DW_mult_tc_5)
+                                                          0.00       0.11 r
+  MUL3/mult_24/U658/ZN (XNOR2_X1)                         0.07       0.18 r
+  MUL3/mult_24/U674/Z (BUF_X1)                            0.08       0.26 r
+  MUL3/mult_24/U778/ZN (OAI22_X1)                         0.05       0.31 f
+  MUL3/mult_24/U573/Z (XOR2_X1)                           0.07       0.39 f
+  MUL3/mult_24/U657/ZN (INV_X1)                           0.04       0.43 r
+  MUL3/mult_24/U558/ZN (OAI222_X1)                        0.05       0.47 f
+  MUL3/mult_24/U660/ZN (NAND2_X1)                         0.03       0.51 r
+  MUL3/mult_24/U539/ZN (AND3_X1)                          0.05       0.56 r
+  MUL3/mult_24/U637/ZN (OAI222_X1)                        0.05       0.61 f
+  MUL3/mult_24/U647/ZN (NAND2_X1)                         0.04       0.65 r
+  MUL3/mult_24/U570/ZN (NAND3_X1)                         0.04       0.69 f
+  MUL3/mult_24/U642/ZN (NAND2_X1)                         0.03       0.72 r
+  MUL3/mult_24/U546/ZN (NAND3_X1)                         0.04       0.76 f
+  MUL3/mult_24/U638/ZN (NAND2_X1)                         0.03       0.78 r
+  MUL3/mult_24/U541/ZN (AND3_X1)                          0.05       0.84 r
+  MUL3/mult_24/U622/ZN (OAI222_X1)                        0.04       0.88 f
+  MUL3/mult_24/U608/ZN (INV_X1)                           0.03       0.92 r
+  MUL3/mult_24/U609/ZN (OAI222_X1)                        0.05       0.97 f
+  MUL3/mult_24/U652/ZN (NAND2_X1)                         0.04       1.01 r
+  MUL3/mult_24/U542/ZN (AND3_X1)                          0.06       1.07 r
+  MUL3/mult_24/U536/ZN (OAI222_X1)                        0.05       1.12 f
+  MUL3/mult_24/U644/ZN (NAND2_X1)                         0.04       1.15 r
+  MUL3/mult_24/U607/ZN (NAND3_X1)                         0.04       1.19 f
+  MUL3/mult_24/U625/ZN (NAND2_X1)                         0.04       1.23 r
+  MUL3/mult_24/U628/ZN (NAND3_X1)                         0.04       1.26 f
+  MUL3/mult_24/U632/ZN (NAND2_X1)                         0.03       1.30 r
+  MUL3/mult_24/U509/ZN (NAND3_X1)                         0.04       1.34 f
+  MUL3/mult_24/U583/ZN (NAND2_X1)                         0.04       1.37 r
+  MUL3/mult_24/U586/ZN (NAND3_X1)                         0.04       1.41 f
+  MUL3/mult_24/U563/ZN (NAND2_X1)                         0.04       1.45 r
+  MUL3/mult_24/U533/ZN (NAND3_X1)                         0.04       1.49 f
+  MUL3/mult_24/U612/ZN (NAND2_X1)                         0.03       1.52 r
+  MUL3/mult_24/U599/ZN (NAND3_X1)                         0.04       1.56 f
+  MUL3/mult_24/U603/ZN (NAND2_X1)                         0.04       1.60 r
+  MUL3/mult_24/U567/ZN (NAND3_X1)                         0.04       1.64 f
+  MUL3/mult_24/U590/ZN (NAND2_X1)                         0.03       1.67 r
+  MUL3/mult_24/U592/ZN (NAND3_X1)                         0.04       1.70 f
+  MUL3/mult_24/U43/CO (FA_X1)                             0.10       1.80 f
+  MUL3/mult_24/U597/ZN (NAND2_X1)                         0.04       1.83 r
+  MUL3/mult_24/U535/ZN (NAND3_X1)                         0.04       1.87 f
+  MUL3/mult_24/U727/ZN (NAND2_X1)                         0.04       1.92 r
+  MUL3/mult_24/U557/ZN (NAND3_X1)                         0.04       1.95 f
+  MUL3/mult_24/U731/ZN (NAND2_X1)                         0.04       1.99 r
+  MUL3/mult_24/U712/ZN (NAND3_X1)                         0.04       2.03 f
+  MUL3/mult_24/U716/ZN (NAND2_X1)                         0.04       2.07 r
+  MUL3/mult_24/U635/ZN (NAND3_X1)                         0.04       2.10 f
+  MUL3/mult_24/U720/ZN (NAND2_X1)                         0.04       2.14 r
+  MUL3/mult_24/U722/ZN (NAND3_X1)                         0.04       2.18 f
+  MUL3/mult_24/U709/ZN (NAND2_X1)                         0.03       2.21 r
+  MUL3/mult_24/U711/ZN (NAND3_X1)                         0.03       2.24 f
+  MUL3/mult_24/U691/ZN (XNOR2_X1)                         0.06       2.30 f
+  MUL3/mult_24/U690/ZN (XNOR2_X1)                         0.05       2.35 f
+  MUL3/mult_24/product[28] (mult_x15_5_DW_mult_tc_0_DW_mult_tc_5)
+                                                          0.00       2.35 f
+  MUL3/M[14] (mult_x15_5)                                 0.00       2.35 f
+  REG04_pipe/D[14] (reg_N15_12)                           0.00       2.35 f
+  REG04_pipe/Q_reg[14]/D (DFFR_X1)                        0.01       2.36 f
+  data arrival time                                                  2.36
+
+  clock MY_CLK (rise edge)                                2.47       2.47
+  clock network delay (ideal)                             0.00       2.47
+  clock uncertainty                                      -0.07       2.40
+  REG04_pipe/Q_reg[14]/CK (DFFR_X1)                       0.00       2.40 r
+  library setup time                                     -0.04       2.36
+  data required time                                                 2.36
+  --------------------------------------------------------------------------
+  data required time                                                 2.36
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,1014 @@
+# do post_place_nockg.do
+# firFilter_tb
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 08:48:21 on Oct 22,2025
+# vcom -work ./work ../../src/constants.vhd 
+# -- Loading package STANDARD
+# -- Compiling package constants
+# End time: 08:48:21 on Oct 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 08:48:21 on Oct 22,2025
+# vcom -work ./work ../../src/clk_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package constants
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# End time: 08:48:21 on Oct 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 08:48:21 on Oct 22,2025
+# vcom -work ./work ../../src/data_maker.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture beh of data_maker
+# End time: 08:48:22 on Oct 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 08:48:22 on Oct 22,2025
+# vcom -work ./work ../../src/data_sink.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture beh of data_sink
+# End time: 08:48:22 on Oct 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 08:48:22 on Oct 22,2025
+# vlog -work ./work ../nockg/datapath_nockg.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 08:48:22 on Oct 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 08:48:22 on Oct 22,2025
+# vlog -sv -work ./work ../../tb/tb_firFilter.sv 
+# -- Compiling module tb_fir_top
+# 
+# Top level modules:
+# 	tb_fir_top
+# End time: 08:48:23 on Oct 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -t 10ps -L /eda/dk/nangate45/verilog/qsim2020.4 -sdfmax "/tb_fir_top/firFilter_tb=../nockg/datapath_nockg.sdf" work.tb_fir_top 
+# Start time: 08:48:23 on Oct 22,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: ../nockg/datapath_nockg.v(10142): (vopt-2685) [TFMPC] - Too few port connections for 'ADD1_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(10142): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(12108): (vopt-2685) [TFMPC] - Too few port connections for 'ADD2_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(12108): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(14059): (vopt-2685) [TFMPC] - Too few port connections for 'ADD3_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(14059): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(16015): (vopt-2685) [TFMPC] - Too few port connections for 'ADD4_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(16015): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(17981): (vopt-2685) [TFMPC] - Too few port connections for 'ADD5_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(17981): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(19937): (vopt-2685) [TFMPC] - Too few port connections for 'ADD6_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(19937): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(21893): (vopt-2685) [TFMPC] - Too few port connections for 'ADD7_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(21893): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../nockg/datapath_nockg.v(23844): (vopt-2685) [TFMPC] - Too few port connections for 'ADD8_add_24_U1_14'.  Expected 5, found 4.
+# ** Warning: ../nockg/datapath_nockg.v(23844): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=16.
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_fir_top(fast)
+# Loading work.datapath(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI21_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.INV_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X3(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.BUF_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.DFFR_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.XOR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND3_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.XNOR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR3_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI21_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI22_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI222_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.XOR2_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.MUX2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.HA_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.FA_X1(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.constants
+# Loading work.clk_gen(beh)#1
+# Loading ieee.std_logic_textio(body)
+# Loading work.data_maker(beh)#1
+# Loading work.data_sink(beh)#1
+# Loading instances from ../nockg/datapath_nockg.sdf
+# Loading timing data from ../nockg/datapath_nockg.sdf
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1766): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1767): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1772): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1773): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1774): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1775): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1776): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1777): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1778): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1779): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) ../nockg/datapath_nockg.sdf(1780): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14704): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14731): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14758): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14785): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14812): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14839): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14866): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14893): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14920): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14947): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(14974): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15001): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15028): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15055): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15082): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B0_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15109): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15136): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15163): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15190): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15217): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15244): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15271): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15298): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15325): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15352): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15379): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15406): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15433): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15460): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15487): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B1_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15514): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15541): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15568): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15595): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15622): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15649): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15676): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15703): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15730): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15757): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15784): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15811): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15838): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15865): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15892): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B2_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15919): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15946): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(15973): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16000): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16027): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16054): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16081): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16108): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16135): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16162): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16189): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16216): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16243): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16270): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16297): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B3_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16324): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16351): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16378): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16405): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16432): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16459): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16486): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16513): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16540): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16567): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16594): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16621): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16648): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16675): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16702): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B4_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16729): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16756): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16783): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16810): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16837): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16864): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16891): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16918): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16945): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16972): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(16999): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17026): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17053): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17080): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17107): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B5_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17134): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17161): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17188): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17215): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17242): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17269): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17296): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17323): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17350): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17377): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17404): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17431): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17458): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17485): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17512): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B6_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17539): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17566): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17593): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17620): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17647): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17674): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17701): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17728): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17755): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17782): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17809): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17836): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17863): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17890): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17917): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B7_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17944): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17971): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(17998): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18025): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18052): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18079): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18106): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18133): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18160): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18187): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18214): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18241): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18268): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18295): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18322): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_B8_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18349): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18376): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18403): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18430): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18457): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18484): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18511): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18538): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18565): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18592): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18619): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18646): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18673): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18700): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(18727): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_IN_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35752): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35779): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35806): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35833): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35860): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35887): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35914): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35941): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35968): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(35995): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(36022): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(36049): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(36076): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(36103): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(36130): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG1_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45076): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45103): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45130): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45157): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45184): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45211): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45238): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45265): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45292): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45319): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45346): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45373): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45400): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45427): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(45454): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG2_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54337): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54364): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54391): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54418): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54445): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54472): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54499): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54526): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54553): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54580): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54607): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54634): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54661): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54688): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(54715): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG3_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63619): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63646): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63673): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63700): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63727): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63754): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63781): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63808): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63835): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63862): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63889): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63916): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63943): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63970): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(63997): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG4_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(72943): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(72970): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(72997): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73024): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73051): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73078): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73105): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73132): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73159): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73186): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73213): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73240): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73267): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73294): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(73321): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG5_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82225): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82252): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82279): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82306): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82333): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82360): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82387): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82414): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82441): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82468): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82495): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82522): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82549): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82576): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(82603): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG6_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91507): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91534): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91561): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91588): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91615): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91642): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91669): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91696): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91723): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91750): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91777): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91804): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91831): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91858): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(91885): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-60 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG7_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100768): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100795): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100822): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100849): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100876): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100903): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100930): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100957): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(100984): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101011): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101038): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101065): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101092): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101119): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101146): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG8_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101173): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_0_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101200): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_1_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101227): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_2_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101254): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_3_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101281): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_4_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101308): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_5_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101335): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_6_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101362): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_7_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101389): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_8_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101416): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_9_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101443): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_10_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101470): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_11_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101497): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_12_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101524): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_13_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101551): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/REG_OUT_Q_reg_14_
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101578): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-50 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/FF_in_Q_reg
+# ** Warning: (vsim-SDF-8470) ../nockg/datapath_nockg.sdf(101605): Matched $recovery, but could not to find matching $removal timing check.
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-70 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb/FF_out_Q_reg
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top File: ../../tb/tb_firFilter.sv
+# ** Note: $finish    : ../../tb/tb_firFilter.sv(77)
+#    Time: 500 ns  Iteration: 0  Instance: /tb_fir_top
+# End time: 08:48:28 on Oct 22,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 601

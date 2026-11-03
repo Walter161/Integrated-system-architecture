@@ -1,0 +1,126 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Oct 22 09:03:04 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+#@(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+#@(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+#@(#)CDS: CPE v20.11-s013
+#@(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+reset_parasitics
+extractRC
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+read_activity_file -format VCD -scope /tb_fir_pipe_top/firFilter_pipe_tb -start {} -end {} -block {} ../../vcd/datapath_pipe_nockg_post_route.vcd
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//datapath_pipe_nockg.rpt
+report_power -outfile power_report_innovus -sort { total }
+setDrawView place
+fit
+zoomBox -60.12600 2.04300 223.95000 139.75000
+zoomBox 26.61100 27.52300 174.90100 99.40700
+zoomBox 71.88850 40.82350 149.29700 78.34750
+zoomBox 79.65050 44.12800 145.44800 76.02350
+zoomBox 91.85550 49.32400 139.39500 72.36900
+zoomBox 79.64950 44.12750 145.44800 76.02350
+zoomBox 62.75500 36.93450 153.82600 81.08150
+zoomBox 39.37150 26.97950 165.42200 88.08300
+zoomBox 44.61950 34.41550 151.76250 86.35350
+zoomBox 58.83350 54.55650 114.76400 81.66900
+selectInst FILLER__1_4196
+deselectAll
+selectInst FILLER__1_4196
+zoomBox 62.89400 56.92450 110.43500 79.97000
+zoomBox 69.27900 60.64800 103.62700 77.29850
+zoomBox 71.77200 62.10200 100.96850 76.25500
+zoomBox 74.15850 63.69400 98.97550 75.72400
+zoomBox 77.91150 66.19800 95.84150 74.88950
+zoomBox 83.99700 70.25800 90.76000 73.53650
+zoomBox 84.55000 70.62700 90.29850 73.41350
+zoomBox 85.11250 71.12150 89.26600 73.13500
+zoomBox 85.33200 71.31500 88.86250 73.02650
+setLayerPreference metal3 -isVisible 0
+setLayerPreference metal3 -isVisible 1
+setLayerPreference active -isVisible 0
+setLayerPreference active -isVisible 1
+setLayerPreference metal1 -isVisible 0
+setLayerPreference metal1 -isVisible 1
+setLayerPreference metal1 -isVisible 0
+setLayerPreference metal1 -isVisible 1
+setLayerPreference metal2 -isVisible 0
+setLayerPreference metal2 -isVisible 1
+setLayerPreference via1 -isVisible 0
+setLayerPreference via1 -isVisible 1
+setLayerPreference via1 -isVisible 0
+setLayerPreference via1 -isVisible 1
+deselectAll
+selectWire 86.3200 72.4150 87.1500 72.4850 3 {ADD4_add_24_carry[13]}
+deselectAll
+selectWire 86.3200 72.4150 87.1500 72.4850 3 {ADD4_add_24_carry[13]}
+zoomBox 85.05800 71.11350 89.21150 73.12700
+zoomBox 84.73550 70.87600 89.62250 73.24500
+zoomBox 84.35650 70.59700 90.10600 73.38400
+deselectAll
+selectWire 86.5100 70.0350 86.5800 72.7650 2 {to_add_4[12]}
+zoomBox 82.43850 69.74650 91.80100 74.28500
+zoomBox 79.31500 68.36200 94.56100 75.75250
+zoomBox 76.20550 66.98350 97.30800 77.21300
+zoomBox 71.90200 65.07550 101.11050 79.23450
+zoomBox 65.94600 62.43500 106.37350 82.03250
+zoomBox 57.70150 58.78050 113.65800 85.90550
+deselectAll
+selectInst FILLER__1_4069
+deselectAll
+selectInst FILLER__1_4142
+deselectAll
+selectInst FILLER__1_4070
+zoomBox 70.89650 64.51000 100.10700 78.67000
+deselectAll
+selectInst FILLER__1_4069
+zoomBox 78.63350 68.00350 91.59500 74.28650
+zoomBox 82.06600 69.55300 87.81850 72.34150
+deselectAll
+selectInst FILLER__1_4071
+deselectAll
+selectWire 5.1300 70.7550 144.7800 70.9250 1 VSS
+zoomBox 83.79650 70.12900 86.79900 71.58450
+zoomBox 84.32100 70.30350 86.49000 71.35500
+zoomBox 82.60900 69.73400 87.49850 72.10400
+zoomBox -66.42950 20.11400 175.25400 137.27100
+zoomBox -571.07100 -147.89050 472.39650 357.93400
+zoomBox -401.49950 -89.70700 352.40600 275.75150
+zoomBox -335.27500 -66.98400 305.54500 243.65600
+zoomBox -209.16950 -29.44400 253.82350 194.99350
+zoomBox -82.47550 8.27050 201.86050 146.10350
+zoomBox -4.66950 31.43200 169.94900 116.07900
+zoomBox 57.07650 54.59600 134.55650 92.15450
+setLayerPreference node_layer -isVisible 0
+setLayerPreference metal1 -isVisible 1
+zoomBox 99.16400 66.36250 120.27700 76.59700
+zoomBox 101.52850 67.02350 119.47450 75.72300
+zoomBox 107.93300 68.81350 117.30150 73.35500
+zoomBox 108.98250 69.10700 116.94550 72.96700
+zoomBox 109.67650 69.48900 116.44500 72.77000
+zoomBox 110.15800 69.66050 115.91150 72.44950
+zoomBox 108.43950 69.04850 117.81150 73.59150
+zoomBox 81.61450 59.50200 147.50650 91.44350
+zoomBox 15.33600 35.91700 220.88150 135.55600
+setLayerPreference metal10 -isVisible 1
+setLayerPreference node_layer -isVisible 1

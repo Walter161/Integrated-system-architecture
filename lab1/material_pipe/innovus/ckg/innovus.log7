@@ -1,0 +1,516 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	-no_logv -no_cmd -files scripts2.tcl 
+Date:		Tue Oct 21 21:08:01 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "scripts2.tcl" ...
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+Loading view definition file from /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/ckg/datapath_pipe_ckg.enc.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.03min, real=0.03min, mem=20.0M, fe_cpu=0.68min, fe_real=0.83min, fe_mem=776.7M) ***
+*** Netlist is unique.
+Loading preference file /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/ckg/datapath_pipe_ckg.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_taskCompressionMode 2 (default=2) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> reset_parasitics
+<CMD> extractRC
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQuantus extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
+Extraction called for design 'datapath_pipe' of instances=12250 and nets=5786 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design datapath_pipe.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_21769_isaserver_isa29_2025_2026_t4TGfb/datapath_pipe_21769_ESCjRk.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1105.0M)
+Extracted 10.0022% (CPU Time= 0:00:00.5  MEM= 1186.1M)
+Extracted 20.0024% (CPU Time= 0:00:00.6  MEM= 1188.1M)
+Extracted 30.0026% (CPU Time= 0:00:00.6  MEM= 1188.1M)
+Extracted 40.0028% (CPU Time= 0:00:00.8  MEM= 1190.1M)
+Extracted 50.003% (CPU Time= 0:00:00.9  MEM= 1191.1M)
+Extracted 60.0032% (CPU Time= 0:00:01.0  MEM= 1192.1M)
+Extracted 70.0034% (CPU Time= 0:00:01.0  MEM= 1193.1M)
+Extracted 80.0036% (CPU Time= 0:00:01.2  MEM= 1193.1M)
+Extracted 90.0038% (CPU Time= 0:00:01.3  MEM= 1194.1M)
+Extracted 100% (CPU Time= 0:00:01.7  MEM= 1194.1M)
+Number of Extracted Resistors     : 82449
+Number of Extracted Ground Cap.   : 88017
+Number of Extracted Coupling Cap. : 228470
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1176.1M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:02.9  Real Time: 0:00:04.0  MEM: 1176.086M)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
+
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -scope /tb_fir_pipe_top/firFilter_pipe_tb -start {} -end {} -block {} ../../vcd/datapath_pipe_ckg_post_route.vcd
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: datapath_pipe
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+             0V	    VSS
+           1.1V	    VDD
+MY_CLK(202.429MHz) Parsing VCD file ../../vcd/datapath_pipe_ckg_post_route.vcd
+
+Starting Reading VCD variables
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT)
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 10%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 20%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 30%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 40%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 50%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 60%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 70%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 80%
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT): 90%
+
+Finished Reading VCD variables
+2025-Oct-21 21:09:03 (2025-Oct-21 19:09:03 GMT)
+   
+The vcd command required:
+   		0.13 user, 0.01 system, and 0.14 real seconds
+
+   Total number of value changes: 237305.
+
+   Total simulation time: 4.9894e-07s.
+
+   With this vcd command,  231541 value changes and 4.9894e-07 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)                    :
+../../vcd/datapath_pipe_ckg_post_route.vcd
+  Names in file that matched to design   : 5736/5736
+  Annotation coverage for this file
+   (Unique nets matched/Total nets)       : 5736/5736 = 100%
+
+
+  Total annotation coverage for all files of type VCD: 5736/5736 = 100%
+  Percent of VCD annotated nets with zero toggles: 135/5736 = 2.35356%
+
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//datapath_pipe_ckg.rpt
+Using Power View: MyAnView.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: datapath_pipe
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1176.09)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 6192
+AAE_INFO-618: Total number of nets in the design is 5786,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1189.3 CPU=0:00:06.5 REAL=0:00:07.0)
+End delay calculation (fullDC). (MEM=1162.22 CPU=0:00:07.4 REAL=0:00:08.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1162.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1162.2M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1088.34)
+Glitch Analysis: View MyAnView -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View MyAnView -- Total Number of Nets Analyzed = 6192. 
+Total number of fetched objects 6192
+AAE_INFO-618: Total number of nets in the design is 5786,  0.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1130.49 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1130.49 CPU=0:00:00.2 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=910.46MB/2262.63MB/954.46MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=910.91MB/2262.63MB/954.46MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=911.20MB/2262.63MB/954.46MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT)
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 10%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 20%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 30%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 40%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 50%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 60%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 70%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 80%
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT): 90%
+
+Finished Levelizing
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT)
+
+Starting Activity Propagation
+2025-Oct-21 21:09:12 (2025-Oct-21 19:09:12 GMT)
+
+Finished Activity Propagation
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT)
+
+Activity annotation summary:
+        Primary Inputs : 153/153 = 100%
+          Flop outputs : 454/454 = 100%
+  Memory/Macro outputs : 0/0 = 0%
+      Tristate outputs : 0/0 = 0%
+            Total Nets : 5736/5736 = 100%
+
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=911.51MB/2262.63MB/954.46MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT)
+ ... Calculating switching power
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 10%
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 20%
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 30%
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 40%
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 60%
+2025-Oct-21 21:09:13 (2025-Oct-21 19:09:13 GMT): 70%
+2025-Oct-21 21:09:14 (2025-Oct-21 19:09:14 GMT): 80%
+2025-Oct-21 21:09:14 (2025-Oct-21 19:09:14 GMT): 90%
+
+Finished Calculating power
+2025-Oct-21 21:09:14 (2025-Oct-21 19:09:14 GMT)
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=911.97MB/2262.63MB/954.46MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=911.97MB/2262.63MB/954.46MB)
+
+Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=912.04MB/2262.63MB/954.46MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=912.05MB/2262.63MB/954.46MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        2.05381876 	   56.1712%
+Total Switching Power:       1.39327160 	   38.1054%
+Total Leakage Power:         0.20926769 	    5.7234%
+Total Power:                 3.65635805
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=914.53MB/2262.63MB/954.46MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:01, real=0:00:02,
+mem(process/total/peak)=1431.96MB/3031.05MB/1431.97MB)
+
+Output file is .//datapath_pipe_ckg.rpt.
+<CMD> report_power -outfile power_report_pipe_innovus -sort { total }
+Using Power View: MyAnView.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1432.02MB/3031.05MB/1432.02MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        2.05381876 	   56.1712%
+Total Switching Power:       1.39327160 	   38.1054%
+Total Leakage Power:         0.20926769 	    5.7234%
+Total Power:                 3.65635805
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1432.51MB/3031.05MB/1432.52MB)
+
+
+Output file is .//power_report_pipe_innovus.
+<CMD> zoomBox 192.95600 110.17500 222.10600 131.22800
+<CMD> gui_select -rect {210.68600 123.63950 214.97850 125.17250}
+<CMD> zoomBox 182.97200 107.31650 232.59850 132.08450
+<CMD> zoomBox 178.89300 103.95350 237.27700 133.09250
+<CMD> setDrawView place
+<CMD> zoomBox 161.94250 94.85350 242.75050 135.18400
+<CMD> zoomBox 165.51550 131.26850 165.51550 131.41500
+<CMD> zoomBox 164.92150 130.82450 166.90300 131.70100
+<CMD> uiSetTool move
+<CMD> zoomBox 164.27600 130.15600 168.74250 132.13150
+<CMD> setDrawView ameba
+<CMD> setDrawView ameba
+<CMD> setDrawView fplan
+<CMD> setDrawView fplan
+<CMD> fit
+<CMD> setDrawView place
+<CMD> zoomBox 10.98450 16.50550 198.99250 99.66100
+<CMD> zoomBox 52.34300 22.98950 135.76450 59.88650
+<CMD> zoomBox 45.50800 21.34600 143.65050 64.75400
+<CMD> zoomBox -29.38150 2.40150 191.80750 100.23300
+<CMD> zoomBox -122.89850 -18.13500 237.27200 141.16750
+<CMD> setLayerPreference allLayers -isSelectable 0
+<CMD> setLayerPreference allLayers -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference clock -isSelectable 1
+<CMD> setLayerPreference allLayers -isSelectable 1
+<CMD> setLayerPreference allLayers -isSelectable 0
+<CMD> setLayerPreference allLayers -isVisible 1
+<CMD> setLayerPreference allLayers -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgPower -isSelectable 1
+<CMD> setLayerPreference pgPower -isSelectable 0
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference block -isVisible 1
+<CMD> setLayerPreference stdCell -isVisible 1
+<CMD> setLayerPreference coverCell -isVisible 1
+<CMD> setLayerPreference phyCell -isVisible 1
+<CMD> setLayerPreference allLayers -isVisible 1
+<CMD> setLayerPreference node_misc -isVisible 1
+<CMD> setLayerPreference node_bump -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setLayerPreference node_route -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference node_power -isVisible 1
+<CMD> setLayerPreference node_partition -isVisible 0
+<CMD> setLayerPreference node_floorplan -isVisible 1
+<CMD> setLayerPreference node_floorplan -isVisible 0
+<CMD> setLayerPreference node_row -isVisible 1
+<CMD> setLayerPreference node_row -isVisible 0
+<CMD> setLayerPreference node_misc -isVisible 0
+<CMD> setLayerPreference node_misc -isVisible 1
+<CMD> setLayerPreference node_power -isVisible 0
+<CMD> setLayerPreference node_power -isVisible 1
+<CMD> setLayerPreference node_module -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 0
+<CMD> setLayerPreference node_blockage -isVisible 1
+<CMD> setLayerPreference node_blockage -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 1
+<CMD> setLayerPreference node_power -isVisible 0
+<CMD> setLayerPreference node_power -isVisible 1
+<CMD> setLayerPreference instanceCell -isVisible 0
+<CMD> setLayerPreference instanceCell -isVisible 1
+<CMD> setLayerPreference instanceCell -isVisible 0
+<CMD> setLayerPreference instanceCell -isVisible 1
+<CMD> setLayerPreference node_module -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 1
+<CMD> setLayerPreference instanceStatus -isVisible 0
+<CMD> setLayerPreference instanceStatus -isVisible 1
+<CMD> zoomBox 1.16600 19.20200 142.79150 89.88600
+<CMD> zoomBox 67.51850 39.27450 112.92150 61.93450
+<CMD> zoomBox 88.28650 46.85100 105.41100 55.39750
+<CMD> zoomBox 82.70750 44.22650 110.59200 58.14350
+<CMD> zoomBox 69.46850 38.00950 122.88700 64.67000
+<CMD> zoomBox 51.62500 31.73250 138.60800 75.14500
+<CMD> zoomBox 33.53750 25.73500 153.92950 85.82150
+<CMD> zoomBox 8.72200 17.10800 175.35600 100.27350
+<CMD> zoomBox -33.53250 -2.43000 197.10350 112.67850
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference clock -isSelectable 1
+<CMD> setLayerPreference allLayers -isVisible 0
+<CMD> setLayerPreference allLayers -isVisible 1
+<CMD> setLayerPreference allLayers -isSelectable 1
+<CMD> zoomBox -119.07800 -36.97450 200.14150 122.34500
+<CMD> setLayerPreference allLayers -isSelectable 0
+<CMD> setLayerPreference allLayers -isSelectable 1
+<CMD> setLayerPreference node_track -isVisible 1
+<CMD> zoomBox -139.03850 -56.59400 236.51400 130.84100
+<CMD> zoomBox 169.63800 51.22650 168.50050 18.69850
+<CMD> zoomBox 190.99800 39.26550 190.91900 37.48900
+<CMD> fit
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> setLayerPreference block -isVisible 0
+<CMD> setLayerPreference stdCell -isVisible 0
+<CMD> setLayerPreference coverCell -isVisible 0
+<CMD> setLayerPreference stdCell -isVisible 1
+<CMD> setLayerPreference stdCell -isVisible 0
+<CMD> setLayerPreference block -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference node_power -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 0
+<CMD> setLayerPreference shield -isVisible 1
+<CMD> setLayerPreference unknowState -isVisible 1
+<CMD> setLayerPreference unknowState -isVisible 0
+<CMD> setLayerPreference metalFill -isVisible 1
+<CMD> setLayerPreference node_net -isSelectable 0
+<CMD> setLayerPreference node_net -isVisible 1
+<CMD> setLayerPreference pgViaGridObj -isVisible 1
+<CMD> setLayerPreference pgViaGridObj -isVisible 0
+<CMD> setDrawView fplan
+<CMD> setLayerPreference allLayers -isVisible 0
+<CMD> setLayerPreference allLayers -isVisible 1
+<CMD> setLayerPreference allLayers -isSelectable 0
+<CMD> setLayerPreference allLayers -isVisible 0
+<CMD> setLayerPreference allLayers -isVisible 1
+<CMD> setLayerPreference allLayers -isSelectable 1
+<CMD> ctd_win -side none -id ctd_window
+Clock tree timing engine global stage delay update for my_delay:both.late...
+Clock tree timing engine global stage delay update for my_delay:both.late done. (took cpu=0:00:00.3 real=0:00:00.3)
+<CMD> selectInst REG_B4_Q_reg_3_
+<CMD> selectInst REG_B4_Q_reg_4_
+<CMD> selectInst REG_B4_Q_reg_9_
+<CMD> selectInst REG_B4_Q_reg_5_
+<CMD> selectInst REG_B4_Q_reg_7_
+<CMD> selectInst REG_B4_Q_reg_8_
+<CMD> selectInst REG_B4_Q_reg_6_
+<CMD> selectInst REG_B4_Q_reg_2_
+<CMD> zoomSelected
+<CMD> deselectInst REG_B4_Q_reg_2_
+<CMD> deselectInst REG_B4_Q_reg_6_
+<CMD> deselectInst REG_B4_Q_reg_8_
+<CMD> deselectInst REG_B4_Q_reg_7_
+<CMD> deselectInst REG_B4_Q_reg_5_
+<CMD> deselectInst REG_B4_Q_reg_9_
+<CMD> deselectInst REG_B4_Q_reg_4_
+<CMD> deselectInst REG_B4_Q_reg_3_
+<CMD> selectObject Net REG8_net80
+<CMD> zoomSelected
+<CMD> deselectObject Net REG8_net80
+<CMD> selectInst FF_in_Q_reg
+<CMD> zoomSelected
+<CMD> setDrawView ameba
+<CMD> redraw
+<CMD> fit
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> setLayerPreference violation -isSelectable 0
+<CMD> setLayerPreference violation -isSelectable 1
+<CMD> setLayerPreference violation -isSelectable 0
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> setLayerPreference node_inst -isVisible 1
+<CMD> setLayerPreference node_module -isVisible 1
+<CMD> setLayerPreference node_module -isVisible 0
+<CMD> setLayerPreference node_track -isVisible 0
+<CMD> setLayerPreference node_route -isVisible 1
+<CMD> setLayerPreference node_route -isVisible 0
+<CMD> setLayerPreference node_route -isVisible 1
+<CMD> setLayerPreference instanceCell -isVisible 0
+<CMD> setLayerPreference instanceCell -isVisible 1
+<CMD> setLayerPreference instanceCell -isSelectable 0
+<CMD> setLayerPreference instanceCell -isSelectable 1
+<CMD> setLayerPreference instanceCell -isSelectable 0
+<CMD> setLayerPreference instanceCell -isSelectable 1
+<CMD> setLayerPreference instanceCell -isSelectable 0
+<CMD> setLayerPreference instanceCell -isSelectable 1
+<CMD> setLayerPreference instanceCell -isVisible 0
+<CMD> setLayerPreference node_net -isVisible 1
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> setLayerPreference node_layer -isSelectable 0
+<CMD> setLayerPreference node_bump -isVisible 1
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> setLayerPreference node_route -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference node_bump -isSelectable 0
+<CMD> setLayerPreference node_bump -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 1
+child process exited abnormally
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Oct 21 21:45:42 2025
+  Total CPU time:     0:11:26
+  Total real time:    0:37:43
+  Peak memory (main): 1469.72MB
+
+
+*** Memory Usage v#2 (Current mem = 1283.305M, initial mem = 272.285M) ***
+*** Message Summary: 5 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:11:21, real=0:37:41, mem=1283.3M) ---

@@ -1,0 +1,1414 @@
+[10/28 10:00:05      0s] 
+[10/28 10:00:05      0s] Cadence Innovus(TM) Implementation System.
+[10/28 10:00:05      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/28 10:00:05      0s] 
+[10/28 10:00:05      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[10/28 10:00:05      0s] Options:	
+[10/28 10:00:05      0s] Date:		Tue Oct 28 10:00:05 2025
+[10/28 10:00:05      0s] Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[10/28 10:00:05      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[10/28 10:00:05      0s] 
+[10/28 10:00:05      0s] License:
+[10/28 10:00:05      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[10/28 10:00:05      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/28 10:00:53     38s] @(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/28 10:00:53     38s] @(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+[10/28 10:00:53     38s] @(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/28 10:00:53     38s] @(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+[10/28 10:00:53     38s] @(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+[10/28 10:00:53     38s] @(#)CDS: CPE v20.11-s013
+[10/28 10:00:53     38s] @(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/28 10:00:53     38s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[10/28 10:00:53     38s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[10/28 10:00:53     38s] @(#)CDS: RCDB 11.15.0
+[10/28 10:00:53     38s] @(#)CDS: STYLUS 20.10-p011_1 (06/03/2020 04:47 PDT)
+[10/28 10:00:53     38s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_23794_isaserver_isa29_2025_2026_oE3LiI.
+
+[10/28 10:00:53     38s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[10/28 10:00:56     40s] 
+[10/28 10:00:56     40s] **INFO:  MMMC transition support version v31-84 
+[10/28 10:00:56     40s] 
+[10/28 10:00:56     40s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/28 10:00:56     40s] <CMD> suppressMessage ENCEXT-2799
+[10/28 10:00:57     41s] <CMD> win
+[10/28 10:02:09     62s] <CMD> encMessage warning 0
+[10/28 10:02:09     62s] Suppress "**WARN ..." messages.
+[10/28 10:02:09     62s] <CMD> encMessage debug 0
+[10/28 10:02:09     62s] <CMD> encMessage info 0
+[10/28 10:02:11     63s] Loading view definition file from /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/innovus/ckg/datapath_ckg.enc.dat/viewDefinition.tcl
+[10/28 10:02:13     65s] *** End library_loading (cpu=0.04min, real=0.03min, mem=11.0M, fe_cpu=1.09min, fe_real=2.13min, fe_mem=787.9M) ***
+[10/28 10:02:13     66s] *** Netlist is unique.
+[10/28 10:02:14     66s] Loading preference file /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/innovus/ckg/datapath_ckg.enc.dat/gui.pref.tcl ...
+[10/28 10:02:14     66s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[10/28 10:02:17     68s] Loading place ...
+[10/28 10:02:20     69s] {RT my_rc 0 10 10 {4 1} {7 0} {9 0} 3}
+[10/28 10:02:21     70s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[10/28 10:02:21     70s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_taskCompressionMode 2 (default=2) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[10/28 10:02:21     70s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+[10/28 10:02:21     70s] timing_enable_default_delay_arc
+[10/28 10:02:24     71s] <CMD> encMessage warning 0
+[10/28 10:02:24     71s] Suppress "**WARN ..." messages.
+[10/28 10:02:24     71s] <CMD> encMessage debug 0
+[10/28 10:02:24     71s] <CMD> encMessage info 0
+[10/28 10:02:24     71s] 
+[10/28 10:02:24     71s] 
+[10/28 10:02:24     71s] ERROR: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 10:02:24     71s] 
+[10/28 10:02:24     71s] 
+[10/28 10:02:24     71s] **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 10:02:24     71s] 
+[10/28 10:02:24     71s]     while executing
+[10/28 10:02:24     71s] "error $catchMsg"
+[10/28 10:02:24     71s]     (procedure "restoreDesign" line 31)
+[10/28 10:02:24     71s] 
+[10/28 10:02:24     71s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 10:02:24     71s] 
+[10/28 10:02:44     79s] <CMD> encMessage warning 0
+[10/28 10:02:44     79s] Suppress "**WARN ..." messages.
+[10/28 10:02:44     79s] <CMD> encMessage debug 0
+[10/28 10:02:44     79s] <CMD> encMessage info 0
+[10/28 10:02:44     79s] 
+[10/28 10:02:44     79s] 
+[10/28 10:02:44     79s] ERROR: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 10:02:44     79s] 
+[10/28 10:02:44     79s] 
+[10/28 10:02:44     79s] **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 10:02:44     79s] 
+[10/28 10:02:44     79s]     while executing
+[10/28 10:02:44     79s] "error $catchMsg"
+[10/28 10:02:44     79s]     (procedure "restoreDesign" line 31)
+[10/28 10:02:44     79s] 
+[10/28 10:02:44     79s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[10/28 10:02:44     79s] 
+[10/28 10:02:55     80s] <CMD> setDrawView place
+[10/28 10:02:57     81s] <CMD> fit
+[10/28 10:04:00     91s] Loading  (datapath)
+[10/28 10:04:00     91s] Traverse HInst (datapath)
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:00     91s] Creating Cell Server ...(0, 0, 0, 0)
+[10/28 10:04:00     91s] Summary for sequential cells identification: 
+[10/28 10:04:00     91s]   Identified SBFF number: 16
+[10/28 10:04:00     91s]   Identified MBFF number: 0
+[10/28 10:04:00     91s]   Identified SB Latch number: 0
+[10/28 10:04:00     91s]   Identified MB Latch number: 0
+[10/28 10:04:00     91s]   Not identified SBFF number: 0
+[10/28 10:04:00     91s]   Not identified MBFF number: 0
+[10/28 10:04:00     91s]   Not identified SB Latch number: 0
+[10/28 10:04:00     91s]   Not identified MB Latch number: 0
+[10/28 10:04:00     91s]   Number of sequential cells which are not FFs: 13
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Visiting view : MyAnView
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[10/28 10:04:00     91s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[10/28 10:04:00     91s]  Setting StdDelay to 10.10
+[10/28 10:04:00     91s] Creating Cell Server, finished. 
+[10/28 10:04:00     91s] 
+[10/28 10:04:00     91s] Deleting Cell Server ...
+[10/28 10:04:18     96s] <CMD> selectInst MUL3_mult_24_U788
+[10/28 10:04:20     96s] <CMD> deselectInst MUL3_mult_24_U788
+[10/28 10:04:22     96s] <CMD> selectObject Net REG_B3_net60
+[10/28 10:04:22     96s] <CMD> selectObject Net FE_OFN16_out_reg_3_3
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n709
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n686
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n678
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n688
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n711
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n743
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n713
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n712
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n687
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n727
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n710
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n677
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n714
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n728
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n679
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n707
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n406
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n392
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n651
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n708
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n652
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n685
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n842
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n706
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n650
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n257
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n256
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n729
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n715
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n744
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n745
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n705
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n841
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n405
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n391
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n377
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n747
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n746
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n675
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n286
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n255
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n376
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n716
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n730
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n254
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n704
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n404
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n390
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n253
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n252
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n717
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n731
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n684
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n762
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n673
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n844
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n403
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n361
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n251
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n389
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n748
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n250
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n763
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n703
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n375
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n249
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n843
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n248
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n718
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n765
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n732
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n749
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n764
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n402
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n672
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n360
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n374
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n285
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n388
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n247
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n246
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n683
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n243
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n245
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n702
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n846
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n244
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n242
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n733
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n719
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n750
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n766
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n359
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n345
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n401
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n373
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n241
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n387
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n845
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n781
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n670
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n240
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n783
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n239
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n237
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n284
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n344
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n701
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n238
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n767
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n720
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n751
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n734
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n236
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n358
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n233
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n386
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n400
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n669
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n235
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n372
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n232
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n721
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n234
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n768
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n682
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n231
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n229
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n848
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n329
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n357
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n399
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n700
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n230
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n784
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n752
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n735
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n228
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n847
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n385
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n227
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n668
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n371
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n225
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n799
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n343
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n722
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n801
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n785
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n224
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n226
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n753
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n370
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n342
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n328
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n699
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n398
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n223
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n221
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n283
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n769
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n222
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n736
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n220
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n215
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n384
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n219
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n217
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n666
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n356
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n723
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n802
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n214
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n737
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n681
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n216
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n770
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n218
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n786
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n213
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n211
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n850
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n397
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n383
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n355
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n313
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n327
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n341
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n698
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n754
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n212
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n210
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n209
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n369
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n205
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n207
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n849
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n665
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n817
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n755
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n208
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n787
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n206
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n771
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n204
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n803
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n738
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n819
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n724
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n396
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n312
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n368
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n201
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n697
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n382
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n282
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n354
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n340
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n203
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n326
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n202
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n200
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n853
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n663
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n193
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n725
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n199
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n197
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n195
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n788
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n804
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n820
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n772
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n196
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n756
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n739
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n194
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n192
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n198
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n191
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n726
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n381
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n367
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n696
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n297
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n311
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n189
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n325
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n353
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n395
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n339
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n190
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n821
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n757
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n851
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n789
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n805
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n773
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n740
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n852
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n188
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n324
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n338
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n352
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n741
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n310
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n184
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n183
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n181
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n662
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n366
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n185
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n380
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n187
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n653
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n173
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n854
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n182
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n806
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n822
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n180
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n790
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n774
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n758
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n186
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n309
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n323
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n379
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n169
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n159
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n167
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n170
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n171
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n172
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n177
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n742
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n835
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n179
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n178
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n365
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n337
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n695
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n351
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n759
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n176
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n823
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n807
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n166
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n775
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n791
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n168
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n153
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n155
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n156
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n654
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n760
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n676
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n660
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n364
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n350
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n322
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n308
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n295
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n175
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n164
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n165
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n336
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n157
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n163
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n174
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n162
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n154
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n152
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n808
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n824
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n776
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n145
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n349
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n161
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n151
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n150
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n149
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n335
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n49
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n143
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n307
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n321
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n141
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n761
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n363
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n148
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n825
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n144
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n142
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n140
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n160
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n129
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n306
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n131
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n48
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n137
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n138
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n139
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n320
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n655
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n147
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n777
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n778
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n130
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n128
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n146
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n136
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n305
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n347
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n348
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n47
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n127
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n135
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n126
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n125
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n119
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n779
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n118
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n124
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n134
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n115
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n656
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n116
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n117
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n46
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n123
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n109
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n108
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n122
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n114
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n113
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n105
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n99
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n45
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n104
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n112
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n44
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n103
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n97
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n102
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n95
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n43
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n94
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n42
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n41
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n40
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n693
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n814
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n830
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n79
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n39
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n839
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n301
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n315
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n831
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n300
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n77
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n291
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n38
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n815
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n664
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n76
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL3_mult_24_n37
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n832
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n73
+[10/28 10:04:22     96s] <CMD> selectObject Net MUL4_mult_24_n694
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n658
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n72
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n299
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n69
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL3_mult_24_n36
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n840
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n833
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n659
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n661
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL3_mult_24_n690
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n290
+[10/28 10:04:22     97s] <CMD> selectObject Net MUL4_mult_24_n691
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U65
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U66
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U68
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U69
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U70
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U71
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U526
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U527
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U528
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U529
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U546
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U547
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U550
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U551
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U552
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U553
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U749
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U752
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U776
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U778
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U779
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U780
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U781
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U783
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U793
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U794
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U795
+[10/28 10:04:22     97s] <CMD> selectInst MUL4_mult_24_U796
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_14_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_13_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_12_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_11_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_5_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_3_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_2_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_1_
+[10/28 10:04:22     97s] <CMD> selectInst REG3_Q_reg_0_
+[10/28 10:04:22     97s] <CMD> selectInst ADD3_add_24_U1_14
+[10/28 10:04:22     97s] <CMD> selectInst ADD3_add_24_U1_13
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U37
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U38
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U39
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U40
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U41
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U42
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U43
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U44
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U45
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U46
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U47
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U48
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U49
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U50
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U80
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U81
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U82
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U84
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U85
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U87
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U89
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U90
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U91
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U92
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U94
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U95
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U96
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U97
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U98
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U100
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U101
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U102
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U103
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U104
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U105
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U106
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U107
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U108
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U109
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U110
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U111
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U113
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U114
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U115
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U116
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U117
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U118
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U121
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U122
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U123
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U124
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U125
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U126
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U127
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U128
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U129
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U130
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U131
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U132
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U133
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U134
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U135
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U136
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U137
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U138
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U139
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U140
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U141
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U142
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U143
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U144
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U145
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U146
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U147
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U148
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U149
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U150
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U151
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U152
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U153
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U154
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U155
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U156
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U157
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U158
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U159
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U160
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U161
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U162
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U500
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U501
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U502
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U503
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U504
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U505
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U506
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U507
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U508
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U509
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U510
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U511
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U512
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U513
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U514
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U515
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U516
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U517
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U518
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U519
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U520
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U522
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U530
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U531
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U532
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U533
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U534
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U535
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U536
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U537
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U538
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U539
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U540
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U541
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U542
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U543
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U544
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U545
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U554
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U555
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U556
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U557
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U558
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U559
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U560
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U561
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U562
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U563
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U564
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U565
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U566
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U567
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U568
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U569
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U570
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U571
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U572
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U573
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U574
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U575
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U576
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U577
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U578
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U579
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U580
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U581
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U582
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U583
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U584
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U585
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U586
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U587
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U588
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U589
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U590
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U591
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U592
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U594
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U595
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U596
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U597
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U598
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U599
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U600
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U601
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U602
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U603
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U604
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U605
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U606
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U607
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U608
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U609
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U610
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U611
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U612
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U613
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U614
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U615
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U616
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U617
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U618
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U619
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U620
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U621
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U622
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U623
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U625
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U626
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U627
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U628
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U629
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U630
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U631
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U632
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U633
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U634
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U635
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U636
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U637
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U638
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U639
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U640
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U641
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U642
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U643
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U644
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U645
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U646
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U647
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U648
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U649
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U650
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U651
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U652
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U653
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U654
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U655
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U656
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U657
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U659
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U660
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U661
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U662
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U663
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U664
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U665
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U666
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U667
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U668
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U669
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U670
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U671
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U672
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U673
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U674
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U675
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U676
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U677
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U678
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U679
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U680
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U681
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U682
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U683
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U684
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U685
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U686
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U687
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U688
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U690
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U691
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U692
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U693
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U694
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U695
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U696
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U697
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U698
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U699
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U700
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U701
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U702
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U703
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U704
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U705
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U706
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U707
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U708
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U709
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U710
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U711
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U713
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U722
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U723
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U724
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U725
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U726
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U727
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U728
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U729
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U730
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U731
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U732
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U733
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U734
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U735
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U736
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U737
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U738
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U739
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U740
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U742
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U753
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U754
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U755
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U756
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U757
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U758
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U759
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U760
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U761
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U762
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U763
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U764
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U765
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U766
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U767
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U768
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U769
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U771
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U784
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U785
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U786
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U797
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U798
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U799
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U800
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U801
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U802
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U803
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U804
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U805
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U806
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U807
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U808
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U809
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U810
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U811
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U812
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U813
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U814
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U815
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U816
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U817
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U818
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U819
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U820
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U821
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U822
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U823
+[10/28 10:04:22     97s] <CMD> selectInst MUL3_mult_24_U827
+[10/28 10:04:22     97s] <CMD> selectInst REG2_Q_reg_10_
+[10/28 10:04:22     97s] <CMD> selectInst REG2_Q_reg_8_
+[10/28 10:04:22     97s] <CMD> selectInst REG2_Q_reg_7_
+[10/28 10:04:22     97s] <CMD> selectInst REG2_Q_reg_6_
+[10/28 10:04:22     97s] <CMD> selectInst REG2_Q_reg_4_
+[10/28 10:04:22     97s] <CMD> selectInst REG1_Q_reg_7_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_14_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_13_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_12_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_11_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_10_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_9_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_8_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_7_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_6_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_5_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_4_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_3_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_2_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_1_
+[10/28 10:04:22     97s] <CMD> selectInst REG_B3_Q_reg_0_
+[10/28 10:04:22     97s] <CMD> selectInst FE_OFC4_out_reg_2_5
+[10/28 10:04:22     97s] <CMD> selectInst FE_OFC16_out_reg_3_3
+[10/28 10:04:22     97s] <CMD> selectInst FE_OFC28_out_reg_1_7
+[10/28 10:04:22     97s] <CMD> selectInst FE_RC_7_0
+[10/28 10:04:22     97s] <CMD> selectInst FE_RC_40_0
+[10/28 10:04:22     97s] <CMD> selectInst FE_RC_41_0
+[10/28 10:04:22     97s] <CMD> selectInst FE_RC_42_0
+[10/28 10:04:22     97s] <CMD> selectInst FE_RC_43_0
+[10/28 10:04:22     97s] <CMD> selectInst FE_RC_57_0
+[10/28 10:04:22     97s] <CMD> selectObject Module REG3_clk_gate_Q_reg
+[10/28 10:04:22     97s] <CMD> selectObject Module REG_B3_clk_gate_Q_reg
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[0]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[1]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[2]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[3]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[4]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[5]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[6]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[7]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[8]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[9]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[10]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[11]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[12]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[13]}
+[10/28 10:04:22     97s] <CMD> selectObject IO_Pin {B3[14]}
+[10/28 10:04:54    104s] <CMD> deselectAll
+[10/28 10:04:55    104s] **ERROR: (IMPSYT-6000):	No Object Selected.
+[10/28 10:06:01    119s] <CMD> dumpToGIF layout

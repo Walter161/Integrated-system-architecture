@@ -1,0 +1,58 @@
+# path to vhdl files
+set VHDL_SRC_PATH "../src"
+
+# name of top entity in testbench
+set TOP_ENTITY_NAME "datapath_pipe"
+
+# simulation time
+set SIMULATION_TIME_NS 10000000ns
+
+# name of testbench 
+set TB_FILE "tb_firFilter_pipe.sv"
+
+# name of top module in testbench
+set TB_MODULE "tb_fir_pipe_top"
+
+# name of vhdl top entity of filter
+set TOP_ENTITY "datapath_pipe"
+
+# name of instance of vhdl top entity of filter
+set TB_TOP_ENTITY_UUT "firFilter_pipe_tb"
+
+# path to generated verilog netlist 
+set NETLIST_PATH "../netlist"
+
+# path to generated innovus netlist
+set INNOVUS_PATH "../innovus"
+
+# path to generated vcd
+set VCD_PATH "../vcd"
+
+# path to testbench
+set TB_PATH "../tb"
+
+# SYNOPSYS SECTION
+set WORK_DIR "work"
+set SRC_PATH "../src"
+set TOP_ARCH "structural"
+set CLK_NAME "MY_CLK"
+
+# CLOCK PERIOD FOUND WITHOUT CLOCK GATING: 
+#FM = 2.49ns
+#FM/2 =4.98ns
+
+# CLOCK PERIOD FOUND WITH CLOCK GATING: 
+#FM = 2.47ns
+#FM/2 =4.94ns
+
+set CLK_PERIOD 2.49
+
+set CLK_PIN "clock"
+set JITTER 0.07
+set INPUT_DELAY 0.5
+set OUTPUT_DELAY 0.5
+set REPORT_PATH "report"
+set SAIF_PATH "../saif"
+set TB_UUT "firFilter_pipe_tb"
+# set COMPILE_FLAGS "-gate clock"
+set COMPILE_FLAGS ""

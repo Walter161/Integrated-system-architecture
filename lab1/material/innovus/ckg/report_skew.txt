@@ -1,0 +1,149 @@
+Clock tree timing engine global stage delay update for my_delay:both.early...
+Clock tree timing engine global stage delay update for my_delay:both.early done. (took cpu=0:00:00.1 real=0:00:00.1)
+Clock tree timing engine global stage delay update for my_delay:both.late...
+Clock tree timing engine global stage delay update for my_delay:both.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+-----------------------------------------------------------------
+Skew Group    Sources    Constrained Sinks    Unconstrained Sinks
+-----------------------------------------------------------------
+MY_CLK           1              287                    0
+-----------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner          Skew Group    ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_delay:both.early    MY_CLK            -        0.078     0.121     0.115        0.004       ignored                  -         0.043              -
+my_delay:both.late     MY_CLK        none         0.078     0.121     0.115        0.004       explicit             0.500         0.043    100% {0.078, 0.121}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+-------------------------------------------------------------------------
+Timing Corner          Skew Group    Min ID    PathID    Max ID    PathID
+-------------------------------------------------------------------------
+my_delay:both.early    MY_CLK        0.078       1       0.121       2
+-    min FF_out_Q_reg/CK
+-    max REG_B0_Q_reg_4_/CK
+my_delay:both.late     MY_CLK        0.078       3       0.121       4
+-    min FF_out_Q_reg/CK
+-    max REG_B0_Q_reg_10_/CK
+-------------------------------------------------------------------------
+
+Timing for timing corner my_delay:both.early, min clock_path:
+=============================================================
+
+PathID    : 1
+Path type : skew group MY_CLK (path 1 of 1)
+Start     : clock
+End       : FF_out_Q_reg/CK
+Delay     : 0.078
+
+-------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap     Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (fF)                      (um)              
+-- Clockpath trace ------------------------------------------------------------------------------
+clock
+-     -          rise   -       0.000   0.002  13.339  (69.255,138.880)  -           3     
+CTS_ccl_a_buf_00017/A
+-     CLKBUF_X3  rise   0.001   0.001   0.002  -       (68.910,120.715)   18.510   -       
+CTS_ccl_a_buf_00017/Z
+-     CLKBUF_X3  rise   0.041   0.041   0.020  22.387  (68.545,121.060)    0.710     8     
+CTS_ccl_a_buf_00003/A
+-     CLKBUF_X1  rise   0.000   0.042   0.020  -       (67.770,117.915)    3.920   -       
+CTS_ccl_a_buf_00003/Z
+-     CLKBUF_X1  rise   0.036   0.078   0.009   2.605  (67.390,118.290)    0.755     2     
+FF_out_Q_reg/CK
+-     DFFR_X1    rise   0.000   0.078   0.009  -       (67.435,115.220)    3.115   -       
+-------------------------------------------------------------------------------------------------
+
+Timing for timing corner my_delay:both.early, max clock_path:
+=============================================================
+
+PathID    : 2
+Path type : skew group MY_CLK (path 1 of 1)
+Start     : clock
+End       : REG_B0_Q_reg_4_/CK
+Delay     : 0.121
+
+------------------------------------------------------------------------------------------------------
+Name  Lib cell       Event  Incr   Arrival  Slew   Cap     Location           Distance  Fanout  Status
+                            (ns)   (ns)     (ns)   (fF)                       (um)              
+-- Clockpath trace -----------------------------------------------------------------------------------
+clock
+-     -              rise   -       0.000   0.002  13.339  (69.255,138.880)   -            3    
+CTS_ccl_a_buf_00017/A
+-     CLKBUF_X3      rise   0.001   0.001   0.002  -       (68.910,120.715)    18.510   -       
+CTS_ccl_a_buf_00017/Z
+-     CLKBUF_X3      rise   0.041   0.041   0.020  22.387  (68.545,121.060)     0.710      8    
+REG_B0_clk_gate_Q_reg/latch/CK
+-     CLKGATETST_X1  rise   0.002   0.043   0.020  -       (110.945,116.340)   47.120   -       
+REG_B0_clk_gate_Q_reg/latch/GCK
+-     CLKGATETST_X1  rise   0.076   0.119   0.049  21.051  (111.575,115.990)    0.980     15    
+REG_B0_Q_reg_4_/CK
+-     DFFR_X1        rise   0.001   0.121   0.049  -       (134.155,99.260)    39.310   -       
+------------------------------------------------------------------------------------------------------
+
+Timing for timing corner my_delay:both.late, min clock_path:
+============================================================
+
+PathID    : 3
+Path type : skew group MY_CLK (path 1 of 1)
+Start     : clock
+End       : FF_out_Q_reg/CK
+Delay     : 0.078
+
+-------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap     Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (fF)                      (um)              
+-- Clockpath trace ------------------------------------------------------------------------------
+clock
+-     -          rise   -       0.000   0.002  13.339  (69.255,138.880)  -           3     
+CTS_ccl_a_buf_00017/A
+-     CLKBUF_X3  rise   0.001   0.001   0.002  -       (68.910,120.715)   18.510   -       
+CTS_ccl_a_buf_00017/Z
+-     CLKBUF_X3  rise   0.041   0.042   0.020  22.387  (68.545,121.060)    0.710     8     
+CTS_ccl_a_buf_00003/A
+-     CLKBUF_X1  rise   0.000   0.042   0.020  -       (67.770,117.915)    3.920   -       
+CTS_ccl_a_buf_00003/Z
+-     CLKBUF_X1  rise   0.036   0.078   0.009   2.605  (67.390,118.290)    0.755     2     
+FF_out_Q_reg/CK
+-     DFFR_X1    rise   0.000   0.078   0.009  -       (67.435,115.220)    3.115   -       
+-------------------------------------------------------------------------------------------------
+
+Timing for timing corner my_delay:both.late, max clock_path:
+============================================================
+
+PathID    : 4
+Path type : skew group MY_CLK (path 1 of 1)
+Start     : clock
+End       : REG_B0_Q_reg_4_/CK
+Delay     : 0.121
+
+------------------------------------------------------------------------------------------------------
+Name  Lib cell       Event  Incr   Arrival  Slew   Cap     Location           Distance  Fanout  Status
+                            (ns)   (ns)     (ns)   (fF)                       (um)              
+-- Clockpath trace -----------------------------------------------------------------------------------
+clock
+-     -              rise   -       0.000   0.002  13.339  (69.255,138.880)   -            3    
+CTS_ccl_a_buf_00017/A
+-     CLKBUF_X3      rise   0.001   0.001   0.002  -       (68.910,120.715)    18.510   -       
+CTS_ccl_a_buf_00017/Z
+-     CLKBUF_X3      rise   0.041   0.042   0.020  22.387  (68.545,121.060)     0.710      8    
+REG_B0_clk_gate_Q_reg/latch/CK
+-     CLKGATETST_X1  rise   0.002   0.043   0.020  -       (110.945,116.340)   47.120   -       
+REG_B0_clk_gate_Q_reg/latch/GCK
+-     CLKGATETST_X1  rise   0.076   0.119   0.049  21.051  (111.575,115.990)    0.980     15    
+REG_B0_Q_reg_4_/CK
+-     DFFR_X1        rise   0.001   0.121   0.049  -       (134.155,99.260)    39.310   -       
+------------------------------------------------------------------------------------------------------
+
+

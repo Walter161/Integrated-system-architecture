@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : datapath_pipe
+Version: S-2021.06-SP4
+Date   : Fri Nov  7 16:48:08 2025
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                         2901
+Number of nets:                          8383
+Number of cells:                         4699
+Number of combinational cells:           4118
+Number of sequential cells:               451
+Number of macros/black boxes:               0
+Number of buf/inv:                        411
+Number of references:                      49
+
+Combinational area:               8425.284037
+Buf/Inv area:                      241.794000
+Noncombinational area:            2362.080073
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 10787.364110
+Total area:                 undefined
+1

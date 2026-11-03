@@ -1,0 +1,360 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	-no_logv -no_cmd -files scripts2.tcl 
+Date:		Wed Oct 22 08:48:29 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "scripts2.tcl" ...
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+Loading view definition file from /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/innovus/nockg/datapath_nockg.enc.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.03min, real=0.03min, mem=19.0M, fe_cpu=0.62min, fe_real=0.80min, fe_mem=775.1M) ***
+*** Netlist is unique.
+Loading preference file /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/innovus/nockg/datapath_nockg.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_taskCompressionMode 2 (default=2) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> reset_parasitics
+<CMD> extractRC
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQuantus extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
+Extraction called for design 'datapath' of instances=12647 and nets=6162 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design datapath.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_30100_isaserver_isa29_2025_2026_8Sgw7B/datapath_30100_Wt80e0.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1105.2M)
+Extracted 10.003% (CPU Time= 0:00:00.5  MEM= 1186.0M)
+Extracted 20.004% (CPU Time= 0:00:00.6  MEM= 1187.0M)
+Extracted 30.003% (CPU Time= 0:00:00.6  MEM= 1188.0M)
+Extracted 40.004% (CPU Time= 0:00:00.7  MEM= 1189.0M)
+Extracted 50.003% (CPU Time= 0:00:00.8  MEM= 1190.0M)
+Extracted 60.004% (CPU Time= 0:00:00.9  MEM= 1191.0M)
+Extracted 70.003% (CPU Time= 0:00:01.0  MEM= 1192.0M)
+Extracted 80.004% (CPU Time= 0:00:01.1  MEM= 1193.0M)
+Extracted 90.003% (CPU Time= 0:00:01.2  MEM= 1193.0M)
+Extracted 100% (CPU Time= 0:00:01.5  MEM= 1193.0M)
+Number of Extracted Resistors     : 82113
+Number of Extracted Ground Cap.   : 87975
+Number of Extracted Coupling Cap. : 217966
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1177.0M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:02.6  Real Time: 0:00:03.0  MEM: 1176.953M)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
+
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -scope /tb_fir_top/firFilter_tb -start {} -end {} -block {} ../../vcd/datapath_nockg_post_route.vcd
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: datapath
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+             0V	    VSS
+           1.1V	    VDD
+MY_CLK(133.69MHz) Parsing VCD file ../../vcd/datapath_nockg_post_route.vcd
+
+Starting Reading VCD variables
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT)
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 10%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 20%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 30%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 40%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 50%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 60%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 70%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 80%
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT): 90%
+
+Finished Reading VCD variables
+2025-Oct-22 08:49:29 (2025-Oct-22 06:49:29 GMT)
+   
+The vcd command required:
+   		0.08 user, 0.01 system, and 0.09 real seconds
+
+   Total number of value changes: 147667.
+
+   Total simulation time: 4.9896e-07s.
+
+** WARN:  (VOLTUS_POWR-1784): The SDC clock frequency 133.69MHz is being overwritten with the VCD clock frequency 126.263MHz for the clock 'MY_CLK' associated with the net
+'clock' from the VCD file. If the SDC clock frequency is required for static power calculation, use the command
+'set_switching_activity -clock <clock name> -scale_factor <num>' to scale frequency of this clock.
+
+   With this vcd command,  141493 value changes and 4.9896e-07 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)                    :
+../../vcd/datapath_nockg_post_route.vcd
+  Names in file that matched to design   : 6160/6160
+  Annotation coverage for this file
+   (Unique nets matched/Total nets)       : 6160/6160 = 100%
+
+
+  Total annotation coverage for all files of type VCD: 6160/6160 = 100%
+  Percent of VCD annotated nets with zero toggles: 135/6160 = 2.19156%
+
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//datapath_nockg.rpt
+Using Power View: MyAnView.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: datapath
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1176.95)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 6168
+AAE_INFO-618: Total number of nets in the design is 6162,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1193.16 CPU=0:00:06.1 REAL=0:00:06.0)
+End delay calculation (fullDC). (MEM=1166.09 CPU=0:00:06.9 REAL=0:00:07.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1166.1M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1166.1M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1088.2)
+Glitch Analysis: View MyAnView -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View MyAnView -- Total Number of Nets Analyzed = 6168. 
+Total number of fetched objects 6168
+AAE_INFO-618: Total number of nets in the design is 6162,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1131.37 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1131.37 CPU=0:00:00.1 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=911.59MB/2263.50MB/968.20MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+** WARN:  (VOLTUS_POWR-1608):   Found conflicting clock definitions for the same clock 'MY_CLK' in the SDC file.
+  Retaining the last specified frequency of 133.69MHz.
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=912.10MB/2263.50MB/968.20MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=912.41MB/2263.50MB/968.20MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT)
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 10%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 20%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 30%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 40%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 50%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 60%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 70%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 80%
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT): 90%
+
+Finished Levelizing
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT)
+
+Starting Activity Propagation
+2025-Oct-22 08:49:37 (2025-Oct-22 06:49:37 GMT)
+
+Finished Activity Propagation
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT)
+
+Activity annotation summary:
+        Primary Inputs : 153/153 = 100%
+          Flop outputs : 574/574 = 100%
+  Memory/Macro outputs : 0/0 = 0%
+      Tristate outputs : 0/0 = 0%
+            Total Nets : 6160/6160 = 100%
+
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=912.72MB/2263.50MB/968.20MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT)
+ ... Calculating switching power
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 10%
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 20%
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 30%
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 40%
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 60%
+2025-Oct-22 08:49:38 (2025-Oct-22 06:49:38 GMT): 70%
+2025-Oct-22 08:49:39 (2025-Oct-22 06:49:39 GMT): 80%
+2025-Oct-22 08:49:39 (2025-Oct-22 06:49:39 GMT): 90%
+
+Finished Calculating power
+2025-Oct-22 08:49:40 (2025-Oct-22 06:49:40 GMT)
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=913.19MB/2263.50MB/968.20MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=913.19MB/2263.50MB/968.20MB)
+
+Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=913.26MB/2263.50MB/968.20MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=913.27MB/2263.50MB/968.20MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.09112380 	   51.1066%
+Total Switching Power:       0.84111006 	   39.3964%
+Total Leakage Power:         0.20276106 	    9.4970%
+Total Power:                 2.13499492
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=916.01MB/2263.50MB/968.20MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:01, real=0:00:02,
+mem(process/total/peak)=1433.75MB/3031.92MB/1433.76MB)
+
+Output file is .//datapath_nockg.rpt.
+<CMD> report_power -outfile power_report_innovus -sort { total }
+Using Power View: MyAnView.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1433.81MB/3031.92MB/1433.81MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.09112380 	   51.1066%
+Total Switching Power:       0.84111006 	   39.3964%
+Total Leakage Power:         0.20276106 	    9.4970%
+Total Power:                 2.13499492
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1434.82MB/3031.92MB/1434.82MB)
+
+
+Output file is .//power_report_innovus.
+<CMD> setDrawView ameba
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> zoomBox -8.03300 46.66150 366.79950 228.36300
+<CMD> zoomBox -8.03300 83.00150 366.79950 264.70300
+<CMD> zoomBox -20.60050 66.81400 420.37900 280.58050
+<CMD> zoomBox -8.03300 83.00150 366.79950 264.70300
+<CMD> zoomBox -35.38650 47.76950 483.41400 299.26000
+<CMD> zoomBox -73.24500 -0.99450 644.81800 347.08900
+<CMD> zoomBox -198.16950 -161.90500 1177.41450 504.91450
+<CMD> zoomBox -163.32300 -135.12450 1005.92350 431.67200
+<CMD> fit
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> zoomBox -25.10100 33.36350 172.34050 129.07400
+<CMD> zoomBox 31.66250 69.17350 119.26950 111.64150
+<CMD> zoomBox 49.13300 80.19500 102.93550 106.27600
+<CMD> zoomBox 59.86150 86.96300 92.90400 102.98050
+<CMD> zoomBox 56.62000 85.27150 95.49350 104.11550
+<CMD> zoomBox 20.93200 66.64950 124.00300 116.61350
+<CMD> zoomBox -50.90450 29.16500 181.39100 141.77100
+<CMD> zoomBox -212.80750 -55.31650 310.73100 198.47050
+<CMD> zoomBox -324.59000 -113.64500 400.03150 237.61800
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> zoomBox -212.96500 -60.03350 310.57400 193.75400
+<CMD> zoomBox -169.37100 -39.09600 275.63750 176.62350
+<CMD> zoomBox -132.31600 -21.29900 245.94150 162.06250
+<CMD> zoomBox -100.81900 -6.17200 220.69950 149.68550
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Oct 22 08:51:29 2025
+  Total CPU time:     0:01:29
+  Total real time:    0:03:02
+  Peak memory (main): 1457.17MB
+
+
+*** Memory Usage v#2 (Current mem = 1929.805M, initial mem = 272.285M) ***
+*** Message Summary: 5 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:24, real=0:03:00, mem=1929.8M) ---

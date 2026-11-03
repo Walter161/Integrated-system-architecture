@@ -1,0 +1,1 @@
+/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/netlist/datapath_pipe_nockg.sdc

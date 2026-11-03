@@ -1,0 +1,78 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version S-2021.06-SP4 for linux64 - Nov 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/isa29_2025_2026/.synopsys_dc_gui/preferences.tcl
+source ../globalDefs.tcl
+# converts vcd to saif
+#vcd2saif -input $VCD_PATH/${TOP_ENTITY}_syn.vcd -output $SAIF_PATH/${TOP_ENTITY}_syn.saif
+# read back the netlist
+read_verilog -netlist $NETLIST_PATH/${TOP_ENTITY}_nockg.v
+Loading db file '/eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db'
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Loading verilog file '/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/netlist/datapath_nockg.v'
+Running DC verilog reader
+Performing 'read' command.
+Compiling source file /home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/netlist/datapath_nockg.v
+Verilog netlist reader completed successfully.
+Current design is now '/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/netlist/datapath.db:datapath'
+Loaded 1 design.
+Current design is 'datapath'.
+datapath
+# DEBUG
+list_design
+datapath (*)
+1
+# set correct module
+current_design ${TOP_ENTITY}
+Current design is 'datapath'.
+{datapath}
+# reading saif from questa sim
+read_saif -input $SAIF_PATH/${TOP_ENTITY}_syn_nockg.saif -instance $TB_MODULE/$TB_UUT -unit ns -scale 1
+1
+# 
+create_clock -name $CLK_NAME -period $CLK_PERIOD $CLK_PIN
+1
+# report power
+report_power > $REPORT_PATH/nockg/power_${CLK_PERIOD}_nockg_report.txt
+report_power -hier > $REPORT_PATH/nockg/power_${CLK_PERIOD}_hier_nockg_report.txt
+#quit
+quit
+
+Memory usage for this session 174 Mbytes.
+Memory usage for this session including child processes 174 Mbytes.
+CPU usage for this session 9 seconds ( 0.00 hours ).
+Elapsed time for this session 11 seconds ( 0.00 hours ).
+
+Thank you...

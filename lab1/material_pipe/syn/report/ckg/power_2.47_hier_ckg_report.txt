@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : datapath_pipe
+Version: S-2021.06-SP4
+Date   : Fri Nov  7 16:46:41 2025
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+datapath_pipe          5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+datapath_pipe                          3.53e+03 4.62e+03 2.44e+05 8.39e+03 100.0
+  REG_OUT_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_0)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG8_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_1)
+                                          5.617    4.847   58.438   10.523   0.1
+  REG09_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_2)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG7_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_3)
+                                          5.617    4.847   58.438   10.523   0.1
+  REG08_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_4)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG6_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_5)
+                                          5.632    4.847   58.438   10.538   0.1
+  REG07_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_6)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG5_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_7)
+                                          5.617    4.847   58.438   10.523   0.1
+  REG06_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_8)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG4_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_9)
+                                          5.617    4.847   58.438   10.523   0.1
+  REG05_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_10)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG3_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_11)
+                                          5.617    4.847   58.438   10.523   0.1
+  REG04_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_12)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG2_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_13)
+                                          5.617    4.847   58.438   10.523   0.1
+  REG03_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_14)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG1_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_15)
+                                          5.615    4.847   58.438   10.520   0.1
+  REG02_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_16)
+                                         11.320    5.555   55.701   16.931   0.2
+  REG01_pipe_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_17)
+                                         11.320    5.555   55.701   16.931   0.2
+  REG_IN_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_18)
+                                         11.290    5.556   55.701   16.902   0.2
+  REG_B8_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_19)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B7_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_20)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B6_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_21)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B5_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_22)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B4_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_23)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B3_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_24)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B2_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_25)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B1_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_26)
+                                         11.296    5.556   55.701   16.907   0.2
+  REG_B0_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_27)
+                                         11.296    5.556   55.701   16.907   0.2
+1

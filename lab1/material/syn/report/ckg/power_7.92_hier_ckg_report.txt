@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : datapath
+Version: S-2021.06-SP4
+Date   : Fri Oct 31 21:43:04 2025
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+datapath               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+datapath                               1.00e+03 1.34e+03 1.98e+05 2.55e+03 100.0
+  REG_OUT_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_0)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG8_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_1)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG7_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_2)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG6_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_3)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG5_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_4)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG4_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_5)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG3_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_6)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG2_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_7)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG1_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_8)
+                                          1.736    1.511   58.437    3.306   0.1
+  REG_IN_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_9)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B8_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_10)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B7_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_11)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B6_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_12)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B5_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_13)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B4_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_14)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B3_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_15)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B2_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_16)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B1_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_17)
+                                          3.516    1.729   55.701    5.301   0.2
+  REG_B0_clk_gate_Q_reg (SNPS_CLOCK_GATE_HIGH_reg_N15_0_18)
+                                          3.516    1.729   55.701    5.301   0.2
+1

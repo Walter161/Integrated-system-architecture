@@ -1,0 +1,6 @@
+#define clock period @ max frequency for each syntesis
+fpnew_top 3.30 ns
+fpnew_top_CSA 2.26 ns
+fpnew_top_PPARCH 2.35 ns
+fpnew_top_retiming 2.38 ns
+fpnew_top_retiming_ultra 2.55 ns

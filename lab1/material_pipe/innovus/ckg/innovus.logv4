@@ -1,0 +1,13 @@
+[10/21 17:07:28      0s] 
+[10/21 17:07:28      0s] Cadence Innovus(TM) Implementation System.
+[10/21 17:07:28      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/21 17:07:28      0s] 
+[10/21 17:07:28      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[10/21 17:07:28      0s] Options:	-abort_on_error -no_gui -files scripts.tcl 
+[10/21 17:07:28      0s] Date:		Tue Oct 21 17:07:28 2025
+[10/21 17:07:28      0s] Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[10/21 17:07:28      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[10/21 17:07:28      0s] 
+[10/21 17:07:28      0s] License:
+[10/21 17:07:28      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[10/21 17:07:28      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.

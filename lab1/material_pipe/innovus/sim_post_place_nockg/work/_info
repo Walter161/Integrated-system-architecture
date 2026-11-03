@@ -1,0 +1,240 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material_pipe/innovus/sim_post_place_nockg
+T_opt
+!s110 1761037509
+V7_N69L9]U4RT4555NKkza1
+Z1 04 15 4 work tb_fir_pipe_top fast 0
+=1-32c32e71d307-68f74cc3-59f4a-4b94
+Z2 o-quiet -auto_acc_if_foreign -work work -L /eda/dk/nangate45/verilog/qsim2020.4 -sdfmax /tb_fir_pipe_top/firFilter_pipe_tb=../nockg/datapath_pipe_nockg.sdf -suppress 1948
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1761116520
+VnY3gm3cVJHk^MTzezVAie2
+R1
+=1-32c32e71d307-68f88167-1ed90-14a6
+R2
+R3
+n@_opt1
+R4
+Eclk_gen
+Z5 w1760975990
+Z6 DPx4 work 9 constants 0 22 nPX4VFR?k0CNhk>IjgTcB2
+Z7 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z8 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z11 8../../src/clk_gen.vhd
+Z12 F../../src/clk_gen.vhd
+l0
+L8 1
+Ve>YX^JA]O<QOmJjdlTOG70
+!s100 V4_9UINPdgE;[EUkE>zm<3
+Z13 OL;C;2020.4;71
+32
+Z14 !s110 1761116517
+!i10b 1
+Z15 !s108 1761116517.000000
+Z16 !s90 -work|./work|../../src/clk_gen.vhd|
+Z17 !s107 ../../src/clk_gen.vhd|
+!i113 0
+Z18 o-work ./work
+Z19 tExplicit 1 CvgOpt 0
+Abeh
+R6
+R7
+R8
+R9
+R10
+DEx4 work 7 clk_gen 0 22 e>YX^JA]O<QOmJjdlTOG70
+!i122 7
+l21
+L15 25
+Va`mhQ[iGB0JZ;:fWJmj`m2
+!s100 ENZ:ifNWgGIBJknz2aeEX0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Pconstants
+!i122 6
+w1761115963
+R0
+8../../src/constants.vhd
+F../../src/constants.vhd
+l0
+L1 1
+VnPX4VFR?k0CNhk>IjgTcB2
+!s100 o1?7J:WH4W813WH=9fKKd0
+R13
+32
+R14
+!i10b 1
+R15
+!s90 -work|./work|../../src/constants.vhd|
+!s107 ../../src/constants.vhd|
+!i113 0
+R18
+R19
+Edata_maker
+Z20 w1760969857
+Z21 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R7
+R8
+R9
+R10
+!i122 8
+R0
+Z22 8../../src/data_maker.vhd
+Z23 F../../src/data_maker.vhd
+l0
+Z24 L10 1
+VkA?G5DRMF8WC3Vh=CCGUh0
+!s100 Kh>;8@ho9V]e@4HijA2b=3
+R13
+32
+R14
+!i10b 1
+R15
+Z25 !s90 -work|./work|../../src/data_maker.vhd|
+Z26 !s107 ../../src/data_maker.vhd|
+!i113 0
+R18
+R19
+Abeh
+R21
+R7
+R8
+R9
+R10
+DEx4 work 10 data_maker 0 22 kA?G5DRMF8WC3Vh=CCGUh0
+!i122 8
+l41
+L29 80
+VbSYXA[Ql]m=B]cS:JZFn]2
+!s100 SM<`@1_95l6OOc`7FP3n71
+R13
+32
+R14
+!i10b 1
+R15
+R25
+R26
+!i113 0
+R18
+R19
+Edata_sink
+Z27 w1760630900
+R21
+R7
+R8
+R9
+R10
+!i122 9
+R0
+Z28 8../../src/data_sink.vhd
+Z29 F../../src/data_sink.vhd
+l0
+R24
+VU2Cmi[322E?A0=bgbbk<E0
+!s100 ong38FN@`NZ?0<>SU?nD91
+R13
+32
+Z30 !s110 1761116518
+!i10b 1
+R15
+Z31 !s90 -work|./work|../../src/data_sink.vhd|
+Z32 !s107 ../../src/data_sink.vhd|
+!i113 0
+R18
+R19
+Abeh
+R21
+R7
+R8
+R9
+R10
+DEx4 work 9 data_sink 0 22 U2Cmi[322E?A0=bgbbk<E0
+!i122 9
+l22
+L20 32
+V@DQBUZYc5aXkzA`aAD@@P3
+!s100 P=A_e^:[5Jzc@DShALX3N3
+R13
+32
+R30
+!i10b 1
+R15
+R31
+R32
+!i113 0
+R18
+R19
+vdatapath_pipe
+R30
+!i10b 1
+!s100 __dFKjV?>?Zhn;ZPB10h70
+Z33 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IcWUcgT9=Sli2g<VFY=F<X1
+R0
+w1761116476
+8../nockg/datapath_pipe_nockg.v
+F../nockg/datapath_pipe_nockg.v
+!i122 10
+L0 15 25109
+Z34 VDg1SIo80bB@j0V0VzS_@n1
+Z35 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z36 !s108 1761116518.000000
+!s107 ../nockg/datapath_pipe_nockg.v|
+!s90 -work|./work|../nockg/datapath_pipe_nockg.v|
+!i113 0
+o-work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vtb_fir_pipe_top
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R30
+!i10b 1
+!s100 R<UKY7>`l?Kg<X@c1`ZCH0
+R33
+I7S:2V6h];MeW?E1OgeBg?1
+S1
+R0
+w1760632436
+8../../tb/tb_firFilter_pipe.sv
+F../../tb/tb_firFilter_pipe.sv
+!i122 11
+L0 2 78
+R34
+R35
+r1
+!s85 0
+31
+R36
+!s107 ../../tb/tb_firFilter_pipe.sv|
+!s90 -sv|-work|./work|../../tb/tb_firFilter_pipe.sv|
+!i113 0
+o-sv -work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
